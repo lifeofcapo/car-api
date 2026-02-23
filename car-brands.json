@@ -1033,7 +1033,9 @@
       },
       {
         "name": "Spring",
-        "generations": [{ "name": "MK1", "yearFrom": 2021, "yearTo": null }]
+        "generations": [
+          { "name": "Spring (1)", "yearFrom": 2021, "yearTo": null }
+        ]
       },
       {
         "name": "Jogger",
@@ -1053,7 +1055,9 @@
           { "name": "MK1", "yearFrom": 2010, "yearTo": 2017 },
           { "name": "MK2", "yearFrom": 2017, "yearTo": 2024 }
         ]
-      }
+      },
+      { "name": "Nova", "generations": [] },
+      { "name": "Supernova", "generations": [] }
     ]
   },
   {
@@ -10344,27 +10348,6 @@
     ]
   },
   {
-    "brand": "Dacia",
-    "models": [
-      { "name": "1300", "generations": [] },
-      { "name": "1310", "generations": [] },
-      { "name": "1410", "generations": [] },
-      { "name": "Dokker", "generations": [] },
-      { "name": "Duster", "generations": [] },
-      { "name": "Jogger", "generations": [] },
-      { "name": "Lodgy", "generations": [] },
-      { "name": "Logan", "generations": [] },
-      { "name": "Logan MCV", "generations": [] },
-      { "name": "Logan Pickup", "generations": [] },
-      { "name": "Nova", "generations": [] },
-      { "name": "Sandero", "generations": [] },
-      { "name": "Sandero Stepway", "generations": [] },
-      { "name": "Solenza", "generations": [] },
-      { "name": "Spring", "generations": [] },
-      { "name": "Supernova", "generations": [] }
-    ]
-  },
-  {
     "brand": "DAF",
     "models": [
       { "name": "44", "generations": [] },
@@ -10422,14 +10405,63 @@
       { "name": "X7", "generations": [] }
     ]
   },
-  {
-    "brand": "Zeekr",
-    "models": [
-      { "name": "001", "generations": [] },
-      { "name": "009", "generations": [] },
-      { "name": "X", "generations": [] }
-    ]
-  },
+{
+  "brand": "Zeekr",
+  "models": [
+    {
+      "name": "001",
+      "generations": [
+        { "name": "001 (1)", "yearFrom": 2021, "yearTo": 2023 },
+        { "name": "001 (restyling)", "yearFrom": 2023, "yearTo": 2024 },
+        { "name": "001 (2)", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "007",
+      "generations": [
+        { "name": "007 (1)", "yearFrom": 2023, "yearTo": null }
+      ]
+    },
+    {
+      "name": "009",
+      "generations": [
+        { "name": "009 (1)", "yearFrom": 2022, "yearTo": 2024 },
+        { "name": "009 (restyling)", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "7X",
+      "generations": [
+        { "name": "7X (1)", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "8X",
+      "generations": [
+        { "name": "8X (1)", "yearFrom": 2025, "yearTo": null }
+      ]
+    },
+    {
+      "name": "9X",
+      "generations": [
+        { "name": "9X (1)", "yearFrom": 2023, "yearTo": 2024 },
+        { "name": "9X (restyling)", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Mix",
+      "generations": [
+        { "name": "Mix (1)", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "X",
+      "generations": [
+        { "name": "X (1)", "yearFrom": 2023, "yearTo": null }
+      ]
+    }
+  ]
+},
   {
     "brand": "GMC",
     "models": [
@@ -10499,44 +10531,236 @@
       { "name": "X5", "generations": [] }
     ]
   },
-  {
-    "brand": "Voyah",
-    "models": [
-      { "name": "Dream", "generations": [] },
-      { "name": "Free", "generations": [] },
-      { "name": "i-Land", "generations": [] },
-      { "name": "Passion", "generations": [] },
-      { "name": "Pursuit", "generations": [] }
-    ]
-  },
+{
+  "brand": "Voyah",
+  "models": [
+    {
+      "name": "Courage",
+      "generations": [
+        { "name": "Courage 1", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Dream",
+      "generations": [
+        { "name": "Dream 1", "yearFrom": 2022, "yearTo": 2023 },
+        { "name": "Dream 1 restyling", "yearFrom": 2023, "yearTo": 2024 },
+        { "name": "Dream 2", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Dream Plus",
+      "generations": [
+        { "name": "Dream Plus 1", "yearFrom": 2023, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Free",
+      "generations": [
+        { "name": "Free 1", "yearFrom": 2021, "yearTo": 2023 },
+        { "name": "Free 1 restyling", "yearFrom": 2023, "yearTo": 2024 },
+        { "name": "Free 2", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Free Plus",
+      "generations": [
+        { "name": "Free Plus 1", "yearFrom": 2023, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Passion",
+      "generations": [
+        { "name": "Passion 1", "yearFrom": 2022, "yearTo": 2024 },
+        { "name": "Passion 1 restyling", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Passion EV",
+      "generations": [
+        { "name": "Passion EV 1", "yearFrom": 2023, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Passion EVR",
+      "generations": [
+        { "name": "Passion EVR 1", "yearFrom": 2023, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Passion L",
+      "generations": [
+        { "name": "Passion L 1", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Taishan",
+      "generations": [
+        { "name": "Taishan 1", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "i-Land",
+      "generations": []
+    },
+    {
+      "name": "Pursuit",
+      "generations": []
+    }
+  ]
+},
   {
     "brand": "Wartburg",
     "models": [
-      { "name": "311", "generations": [] },
-      { "name": "312", "generations": [] },
-      { "name": "353", "generations": [] },
-      { "name": "1.3", "generations": [] }
+      {
+        "name": "311",
+        "generations": [
+          { "name": "311 (1)", "yearFrom": 1956, "yearTo": 1958 },
+          { "name": "311 (2)", "yearFrom": 1958, "yearTo": 1960 },
+          { "name": "311 (3)", "yearFrom": 1960, "yearTo": 1962 },
+          { "name": "311 (1000)", "yearFrom": 1962, "yearTo": 1965 }
+        ]
+      },
+      {
+        "name": "312",
+        "generations": [
+          { "name": "312 (1)", "yearFrom": 1965, "yearTo": 1967 }
+        ]
+      },
+      {
+        "name": "313",
+        "generations": [
+          { "name": "313 (1)", "yearFrom": 1957, "yearTo": 1960 }
+        ]
+      },
+      {
+        "name": "353",
+        "generations": [
+          { "name": "353 (Wartburg 353)", "yearFrom": 1966, "yearTo": 1975 },
+          { "name": "353 W (Wartburg 353W)", "yearFrom": 1975, "yearTo": 1982 },
+          { "name": "353 (Tourist)", "yearFrom": 1966, "yearTo": 1988 }
+        ]
+      },
+      {
+        "name": "1.3",
+        "generations": [
+          { "name": "1.3", "yearFrom": 1988, "yearTo": 1991 }
+        ]
+      }
     ]
   },
-  {
-    "brand": "Triumph",
-    "models": [
-      { "name": "Acclaim", "generations": [] },
-      { "name": "Dolomite", "generations": [] },
-      { "name": "GT6", "generations": [] },
-      { "name": "Herald", "generations": [] },
-      { "name": "Spitfire", "generations": [] },
-      { "name": "Stag", "generations": [] },
-      { "name": "TR2", "generations": [] },
-      { "name": "TR3", "generations": [] },
-      { "name": "TR4", "generations": [] },
-      { "name": "TR5", "generations": [] },
-      { "name": "TR6", "generations": [] },
-      { "name": "TR7", "generations": [] },
-      { "name": "TR8", "generations": [] },
-      { "name": "Vitesse", "generations": [] }
-    ]
-  },
+{
+  "brand": "Triumph",
+  "models": [
+    {
+      "name": "Acclaim",
+      "generations": [
+        { "name": "Acclaim (LD)", "yearFrom": 1981, "yearTo": 1984 }
+      ]
+    },
+    {
+      "name": "Dolomite",
+      "generations": [
+        { "name": "Dolomite (1965 series)", "yearFrom": 1965, "yearTo": 1967 },
+        { "name": "Dolomite (1967 series)", "yearFrom": 1967, "yearTo": 1970 },
+        { "name": "Dolomite (1970 series)", "yearFrom": 1970, "yearTo": 1972 },
+        { "name": "Dolomite Sprint", "yearFrom": 1973, "yearTo": 1980 }
+      ]
+    },
+    {
+      "name": "GT6",
+      "generations": [
+        { "name": "GT6 Mk1", "yearFrom": 1966, "yearTo": 1968 },
+        { "name": "GT6 Mk2", "yearFrom": 1968, "yearTo": 1970 },
+        { "name": "GT6 Mk3", "yearFrom": 1970, "yearTo": 1973 }
+      ]
+    },
+    {
+      "name": "Herald",
+      "generations": [
+        { "name": "Herald 948", "yearFrom": 1959, "yearTo": 1961 },
+        { "name": "Herald 1200", "yearFrom": 1961, "yearTo": 1970 },
+        { "name": "Herald 12/50", "yearFrom": 1963, "yearTo": 1967 },
+        { "name": "Herald 13/60", "yearFrom": 1967, "yearTo": 1971 }
+      ]
+    },
+    {
+      "name": "Spitfire",
+      "generations": [
+        { "name": "Spitfire Mk1", "yearFrom": 1962, "yearTo": 1965 },
+        { "name": "Spitfire Mk2", "yearFrom": 1965, "yearTo": 1967 },
+        { "name": "Spitfire Mk3", "yearFrom": 1967, "yearTo": 1970 },
+        { "name": "Spitfire Mk4", "yearFrom": 1970, "yearTo": 1974 },
+        { "name": "Spitfire 1500", "yearFrom": 1974, "yearTo": 1980 }
+      ]
+    },
+    {
+      "name": "Stag",
+      "generations": [
+        { "name": "Stag (Mk1)", "yearFrom": 1970, "yearTo": 1973 },
+        { "name": "Stag (Mk2)", "yearFrom": 1973, "yearTo": 1977 }
+      ]
+    },
+    {
+      "name": "TR2",
+      "generations": [
+        { "name": "TR2 (long door)", "yearFrom": 1953, "yearTo": 1955 },
+        { "name": "TR2 (short door)", "yearFrom": 1955, "yearTo": 1955 }
+      ]
+    },
+    {
+      "name": "TR3",
+      "generations": [
+        { "name": "TR3 (early)", "yearFrom": 1955, "yearTo": 1957 },
+        { "name": "TR3A", "yearFrom": 1957, "yearTo": 1962 }
+      ]
+    },
+    {
+      "name": "TR4",
+      "generations": [
+        { "name": "TR4 (IRS)", "yearFrom": 1961, "yearTo": 1965 },
+        { "name": "TR4A (IRS)", "yearFrom": 1965, "yearTo": 1967 }
+      ]
+    },
+    {
+      "name": "TR5",
+      "generations": [
+        { "name": "TR5 (PI)", "yearFrom": 1967, "yearTo": 1968 }
+      ]
+    },
+    {
+      "name": "TR6",
+      "generations": [
+        { "name": "TR6 (PI)", "yearFrom": 1969, "yearTo": 1973 },
+        { "name": "TR6 (carburetor)", "yearFrom": 1973, "yearTo": 1976 }
+      ]
+    },
+    {
+      "name": "TR7",
+      "generations": [
+        { "name": "TR7 (coupe)", "yearFrom": 1975, "yearTo": 1978 },
+        { "name": "TR7 (convertible)", "yearFrom": 1979, "yearTo": 1981 },
+        { "name": "TR7 (DHC)", "yearFrom": 1979, "yearTo": 1981 },
+        { "name": "TR7 Sprint", "yearFrom": 1978, "yearTo": 1978 }
+      ]
+    },
+    {
+      "name": "TR8",
+      "generations": [
+        { "name": "TR8 (coupe)", "yearFrom": 1978, "yearTo": 1981 },
+        { "name": "TR8 (convertible)", "yearFrom": 1980, "yearTo": 1981 }
+      ]
+    },
+    {
+      "name": "Vitesse",
+      "generations": [
+        { "name": "Vitesse 1600", "yearFrom": 1962, "yearTo": 1966 },
+        { "name": "Vitesse 2-Litre (Mk1)", "yearFrom": 1966, "yearTo": 1968 },
+        { "name": "Vitesse 2-Litre (Mk2)", "yearFrom": 1968, "yearTo": 1971 }
+      ]
+    }
+  ]
+},
   {
     "brand": "Daihatsu",
     "models": [
@@ -10764,29 +10988,42 @@
       }
     ]
   },
-  {
-    "brand": "Jetta",
-    "models": [
-      {
-        "name": "VA3",
-        "generations": [
-          { "name": "First Gen", "yearFrom": 2019, "yearTo": null }
-        ]
-      },
-      {
-        "name": "VS5",
-        "generations": [
-          { "name": "First Gen", "yearFrom": 2019, "yearTo": null }
-        ]
-      },
-      {
-        "name": "VS7",
-        "generations": [
-          { "name": "First Gen", "yearFrom": 2020, "yearTo": null }
-        ]
-      }
-    ]
-  },
+{
+  "brand": "Jetta",
+  "models": [
+    {
+      "name": "VA3",
+      "generations": [
+        { "name": "VA3 1 restyling", "yearFrom": 2019, "yearTo": null }
+      ]
+    },
+    {
+      "name": "VA7",
+      "generations": [
+        { "name": "VA7 1", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "VS5",
+      "generations": [
+        { "name": "VS5 1", "yearFrom": 2019, "yearTo": 2024 },
+        { "name": "VS5 1 restyling", "yearFrom": 2024, "yearTo": null }
+      ]
+    },
+    {
+      "name": "VS7",
+      "generations": [
+        { "name": "VS7 1", "yearFrom": 2019, "yearTo": null }
+      ]
+    },
+    {
+      "name": "VS8",
+      "generations": [
+        { "name": "VS8 1", "yearFrom": 2025, "yearTo": null }
+      ]
+    }
+  ]
+},
   {
     "brand": "John Deere",
     "models": [
