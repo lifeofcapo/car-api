@@ -1,71 +1,34 @@
 # 🚗 Car Brands, Models & Parts Database
 
+[![npm version](https://img.shields.io/npm/v/auto-parts-db)](https://www.npmjs.com/package/auto-parts-db)
+[![npm downloads](https://img.shields.io/npm/dm/auto-parts-db)](https://www.npmjs.com/package/auto-parts-db)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub last commit](https://img.shields.io/github/last-commit/lifeofcapo/car-list)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-**Save hundreds of euros on commercial APIs!** This is a comprehensive, ready-to-use database of car brands, models, and auto parts in structured JSON format.
+**Save hundreds of euros on commercial APIs!** 
 
----
+The most comprehensive **automotive database** for JavaScript/TypeScript. 
+Includes 100+ car brands, 2000+ models with generations (1968-present), 
+and 1200+ auto parts. Perfect for dealerships, e-commerce, and automotive apps.
 
-## 📁 About The Project
+## ✨ Features
 
-This repository contains structured JSON data perfect for developing automotive applications, catalogs, e-commerce platforms, and comparison tools.
+- 🚙 **100+ Car Brands** - Audi, BMW, Toyota, Ford, Tesla, and more
+- 📅 **Generations with years** - Exact production years (1968-present)
+- 🔧 **1200+ Auto Parts** - Comprehensive parts catalog
+- 📦 **Lightweight & Tree-shakeable** - Use only what you need
+- 🌐 **Works everywhere** - Node.js, browsers, React, Vue, Angular
+- 📘 **TypeScript ready** - Full type definitions included
 
-**What's inside?**
+## 📦 Installation
 
-*   **`carBrands.json`**: Complete hierarchy from brand to model to generation
-*   **`carParts.json`**: Extensive catalog of auto parts and related products
-
----
-
-## 🗂️ Data Structure
-
-### `carBrands.json`
-
-Nested structure for accurate representation of automotive lineups.
-
-```json
-{
-  "brand": "Audi",
-  "models": [
-    {
-      "name": "100",
-      "generations": [
-        { "name": "C1", "yearFrom": 1968, "yearTo": 1976 },
-        { "name": "C2", "yearFrom": 1976, "yearTo": 1982 }
-      ]
-    }
-  ]
-}
-```
-
-*   **`brand`**: Automotive brand name (e.g., Audi, BMW)
-*   **`models`**: List of models for the brand
-*   **`generations`**: List of generations with production years
-
-**Statistics:**
-*   🏷️ **95+** car brands
-*   🚙 **Multiple** models per brand
-*   📅 **Generations** with production years
-
-### `carParts.json`
-
-Catalog of auto parts and car care products.
-
-```json
-[
-  {
-    "slug": "absorber-bampera",
-    "name": "Абсорбер (наполнитель бампера)"
-  }
-]
-```
-
-*   **`slug`**: Unique English identifier
-*   **`name`**: Product name in Russian
-
-**Statistics:**
-*   🔧 **1200+** auto parts and car care items
+```bash
+npm install auto-parts-db
+# or
+yarn add auto-parts-db
+# or
+pnpm add auto-parts-db
 
 ---
 
@@ -76,21 +39,6 @@ Catalog of auto parts and car care products.
 *   **Automotive Portals**: Enriching content with structured data
 *   **Mobile Applications**: For taxi services, car sharing, maintenance
 *   **Analytics & Research**: Automotive market analysis
----
-
-## 📊 Data Coverage
-
-### Brands Included:
-- European (Audi, BMW, Mercedes-Benz, Volkswagen, etc.)
-- American (Ford, Chevrolet, Tesla, etc.)
-- Asian (Toyota, Honda, Hyundai, etc.)
-
-### Parts Categories:
-- Engine components
-- Suspension parts
-- Electrical systems
-- Car care products
-
 ---
 
 ## 🤝 Contributing
