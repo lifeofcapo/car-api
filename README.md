@@ -2,8 +2,11 @@
 
 [![npm version](https://img.shields.io/npm/v/auto-parts-db)](https://www.npmjs.com/package/auto-parts-db)
 [![npm downloads](https://img.shields.io/npm/dm/auto-parts-db)](https://www.npmjs.com/package/auto-parts-db)
+[![GitHub stars](https://img.shields.io/github/stars/lifeofcapo/car-list?style=social)](https://github.com/lifeofcapo/car-list/stargazers)
 [![GitHub last commit](https://img.shields.io/github/last-commit/lifeofcapo/car-list)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+📚 [Documentation](https://lifeofcapo.github.io/car-api/) · [NPM](https://npmjs.com/package/auto-parts-db)
 
 **Save hundreds of euros on commercial APIs!** 
 
@@ -28,8 +31,35 @@ npm install auto-parts-db
 yarn add auto-parts-db
 # or
 pnpm add auto-parts-db
-```bash
+```
 ---
+
+## 🚀 Quick Start
+```js
+import { getBrands, getModelsByBrand, searchParts } from 'auto-parts-db';
+
+// Get all car brands
+const brands = getBrands();
+console.log(brands); // ['Audi', 'BMW', 'Toyota', ...]
+
+// Get models for a specific brand
+const audiModels = getModelsByBrand('Audi');
+console.log(audiModels[0]); 
+// { name: 'A4', generations: [{ name: 'B5', yearFrom: 1994, yearTo: 2001 }, ...] }
+
+// Search for auto parts
+const brakeParts = searchParts('тормоз');
+console.log(brakeParts); // All brake-related parts
+```
+
+## Auto parts store integration
+```js
+import { searchParts } from 'auto-parts-db';
+
+// User searches for "absorber"
+const parts = searchParts('absorber');
+// Returns all parts containing 'absorber' in name or slug
+```
 
 ## 💡 Use Cases
 
