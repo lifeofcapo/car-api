@@ -2,7 +2,6 @@
 
 [![npm version](https://img.shields.io/npm/v/auto-parts-db)](https://www.npmjs.com/package/auto-parts-db)
 [![npm downloads](https://img.shields.io/npm/dm/auto-parts-db)](https://www.npmjs.com/package/auto-parts-db)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub last commit](https://img.shields.io/github/last-commit/lifeofcapo/car-list)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
@@ -21,7 +20,7 @@ and 1200+ auto parts. Perfect for dealerships, e-commerce, and automotive apps.
 - 🌐 **Works everywhere** - Node.js, browsers, React, Vue, Angular
 - 📘 **TypeScript ready** - Full type definitions included
 
-## 📦 Installation
+## 📦 Installation 
 
 ```bash
 npm install auto-parts-db
@@ -29,7 +28,7 @@ npm install auto-parts-db
 yarn add auto-parts-db
 # or
 pnpm add auto-parts-db
-
+```bash
 ---
 
 ## 💡 Use Cases
