@@ -1,0 +1,61 @@
+{
+  "name": "auto-parts-db",
+  "version": "1.0.0",
+  "description": "Comprehensive automotive database: 100+ car brands, 2000+ models with generations (1968-present), and 1200+ auto parts. Perfect for dealerships, e-commerce, catalogs, and automotive apps.",
+  "keywords": [
+    "auto-parts",
+    "car-database",
+    "car-brands",
+    "car-models",
+    "car-generations",
+    "auto-parts-catalog",
+    "automotive-data",
+    "vehicle-database",
+    "car-catalog",
+    "parts-catalog",
+    "auto-database",
+    "car-parts",
+    "auto-brands",
+    "vehicle-models",
+    "car-years",
+    "automotive-api",
+    "car-specs",
+    "vehicle-specs",
+    "auto-catalog",
+    "car-parts-api"
+  ],
+  "homepage": "https://lifeofcapo.github.io/car-api/",
+  "bugs": {
+    "url": "https://github.com/lifeofcapo/car-list/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lifeofcapo/car-list.git"
+  },
+  "license": "MIT",
+  "author": "@lifeofcapo",
+  "type": "commonjs",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "main": "./dist/cjs/index.js",
+  "types": "./dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs && npm run build:types",
+    "build:esm": "tsc --project tsconfig.esm.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
+    "build:types": "tsc --project tsconfig.types.json",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "module": "./dist/esm/index.js"
+}

@@ -1,4 +1,4 @@
-[
+export const brands = [
   {
     "brand": "Seat",
     "models": [
@@ -12313,4 +12313,20 @@
     }
   ]
 }
-]
+] as const;
+
+export type Generation = {
+  name: string;
+  yearFrom: number;
+  yearTo: number | null;
+};
+
+export type Model = {
+  name: string;
+  generations: Generation[];
+};
+
+export type Brand = {
+  brand: string;
+  models: Model[];
+};

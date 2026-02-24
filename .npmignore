@@ -1,0 +1,28 @@
+# Исходники и тесты, которые не нужны в пакете
+src/
+test/
+spec/
+examples/
+
+# Конфигурационные файлы (не нужны конечному пользователю)
+tsconfig.json
+tsconfig.*.json
+.gitignore
+.npmignore
+.prettierrc
+.eslintrc
+webpack.config.js
+
+# Репозиторий и CI
+.git/
+.github/
+.gitattributes
+*.html
+*.css
+*.js
+web/
+index.html
+styles.css
+javascript.js
+car-brands.json
+car-parts.json
