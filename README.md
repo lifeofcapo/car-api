@@ -60,7 +60,19 @@ import { searchParts } from 'auto-parts-db';
 const parts = searchParts('absorber');
 // Returns all parts containing 'absorber' in name or slug
 ```
+## 🌐 Browser (CDN / Script tag)
+```js
+    <script src="https://cdn.jsdelivr.net/npm/auto-parts-db/dist/browser/auto-parts-db.min.js"></script>
 
+    const brands = AutoPartsDB.getBrands();
+    const parts = AutoPartsDB.searchParts('absorber');
+    console.log(brands); // ['Audi', 'BMW', 'Toyota', ...]
+
+```
+
+All functions are available via the global `AutoPartsDB` object.
+
+---
 ## 💡 Use Cases
 
 *   **Car Catalogs**: Building filters by brand, model, and year

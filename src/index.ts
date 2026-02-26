@@ -1,10 +1,11 @@
+export { brands } from "./data/brands";
+export { parts } from "./data/parts";
+export type { Brand, Model, Generation } from "./data/brands";
+export type { Part } from "./data/parts";
 import { brands } from "./data/brands";
 import { parts } from "./data/parts";
 import type { Brand, Model, Generation } from "./data/brands";
 import type { Part } from "./data/parts";
-
-export { brands, parts };
-export type { Brand, Model, Generation, Part };
 
 // ─── BRANDS & MODELS ────────────────────────────────────────────────────────
 

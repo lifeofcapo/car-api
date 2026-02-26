@@ -1,6 +1,6 @@
 {
   "name": "auto-parts-db",
-  "version": "1.0.2",
+  "version": "1.9.1",
   "description": "Comprehensive automotive database: 100+ car brands, 2000+ models with generations (1968-present), and 1200+ auto parts. Perfect for dealerships, e-commerce, catalogs, and automotive apps.",
   "keywords": [
     "auto-parts",
@@ -37,9 +37,9 @@
   "type": "commonjs",
   "exports": {
     ".": {
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js",
-      "types": "./dist/types/index.d.ts"
+      "require": "./dist/cjs/index.js"
     },
     "./browser": "./dist/browser/auto-parts-db.min.js"
   },
