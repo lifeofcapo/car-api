@@ -1,3 +1,8 @@
+export type Part = {
+  slug: string;
+  name: string;
+};
+
 export const parts = [
   {
     "slug": "lavr-konditsioner-kozhi-vosstanavlivayushchiy",
@@ -5868,8 +5873,3 @@ export const parts = [
     "name": "Ящик для инструментов (набор инструментов штатный)"
   },
 ] as const;
-
-export type Part = {
-  slug: string;
-  name: string;
-};

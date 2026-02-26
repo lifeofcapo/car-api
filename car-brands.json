@@ -9835,232 +9835,1258 @@
   {
     "brand": "Cadillac",
     "models": [
-      { "name": "Allanté", "generations": [] },
-      { "name": "ATS", "generations": [] },
-      { "name": "BLS", "generations": [] },
-      { "name": "CT4", "generations": [] },
-      { "name": "CT5", "generations": [] },
-      { "name": "CT6", "generations": [] },
-      { "name": "Catera", "generations": [] },
-      { "name": "Coupe de Ville", "generations": [] },
-      { "name": "DeVille", "generations": [] },
-      { "name": "DTS", "generations": [] },
-      { "name": "Eldorado", "generations": [] },
-      { "name": "ELR", "generations": [] },
-      { "name": "Escalade", "generations": [] },
-      { "name": "Fleetwood", "generations": [] },
-      { "name": "Seville", "generations": [] },
-      { "name": "SRX", "generations": [] },
-      { "name": "STS", "generations": [] },
-      { "name": "XLR", "generations": [] },
-      { "name": "XT4", "generations": [] },
-      { "name": "XT5", "generations": [] },
-      { "name": "XT6", "generations": [] },
-      { "name": "XTS", "generations": [] }
+      {
+        "name": "Allanté",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1987, "yearTo": 1993 }
+        ]
+      },
+      {
+        "name": "ATS",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2012, "yearTo": 2019 }
+        ]
+      },
+      {
+        "name": "BLS",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2006, "yearTo": 2010 }
+        ]
+      },
+      {
+        "name": "CT4",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2019, "yearTo": null }
+        ]
+      },
+      {
+        "name": "CT5",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2019, "yearTo": null }
+        ]
+      },
+      {
+        "name": "CT6",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2016, "yearTo": 2020 }
+        ]
+      },
+      {
+        "name": "Catera",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1996, "yearTo": 2001 }
+        ]
+      },
+      {
+        "name": "Coupe de Ville",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1949, "yearTo": 1964 },
+          { "name": "Mk2", "yearFrom": 1965, "yearTo": 1970 },
+          { "name": "Mk3", "yearFrom": 1971, "yearTo": 1976 },
+          { "name": "Mk4", "yearFrom": 1977, "yearTo": 1984 },
+          { "name": "Mk5", "yearFrom": 1985, "yearTo": 1993 }
+        ]
+      },
+      {
+        "name": "DeVille",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1958, "yearTo": 1964 },
+          { "name": "Mk2", "yearFrom": 1965, "yearTo": 1970 },
+          { "name": "Mk3", "yearFrom": 1971, "yearTo": 1976 },
+          { "name": "Mk4", "yearFrom": 1977, "yearTo": 1984 },
+          { "name": "Mk5", "yearFrom": 1985, "yearTo": 1993 },
+          { "name": "Mk6", "yearFrom": 1994, "yearTo": 1999 },
+          { "name": "Mk7", "yearFrom": 2000, "yearTo": 2005 }
+        ]
+      },
+      {
+        "name": "DTS",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2006, "yearTo": 2011 }
+        ]
+      },
+      {
+        "name": "Eldorado",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1953, "yearTo": 1955 },
+          { "name": "Mk2", "yearFrom": 1956, "yearTo": 1960 },
+          { "name": "Mk3", "yearFrom": 1961, "yearTo": 1963 },
+          { "name": "Mk4", "yearFrom": 1967, "yearTo": 1970 },
+          { "name": "Mk5", "yearFrom": 1971, "yearTo": 1978 },
+          { "name": "Mk6", "yearFrom": 1979, "yearTo": 1985 },
+          { "name": "Mk7", "yearFrom": 1986, "yearTo": 1991 },
+          { "name": "Mk8", "yearFrom": 1992, "yearTo": 2002 }
+        ]
+      },
+      {
+        "name": "ELR",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2013, "yearTo": 2016 }
+        ]
+      },
+      {
+        "name": "Escalade",
+        "generations": [
+          { "name": "Mk1 (GMT400)", "yearFrom": 1999, "yearTo": 2000 },
+          { "name": "Mk2 (GMT820)", "yearFrom": 2002, "yearTo": 2006 },
+          { "name": "Mk3 (GMT900)", "yearFrom": 2007, "yearTo": 2014 },
+          { "name": "Mk4 (K2XX)", "yearFrom": 2015, "yearTo": 2020 },
+          { "name": "Mk5 (T1XX)", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Fleetwood",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1976, "yearTo": 1992 },
+          { "name": "Mk2", "yearFrom": 1993, "yearTo": 1996 }
+        ]
+      },
+      {
+        "name": "Seville",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1975, "yearTo": 1979 },
+          { "name": "Mk2", "yearFrom": 1980, "yearTo": 1985 },
+          { "name": "Mk3", "yearFrom": 1986, "yearTo": 1991 },
+          { "name": "Mk4", "yearFrom": 1992, "yearTo": 1997 },
+          { "name": "Mk5", "yearFrom": 1998, "yearTo": 2004 }
+        ]
+      },
+      {
+        "name": "SRX",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2004, "yearTo": 2009 },
+          { "name": "Mk2", "yearFrom": 2010, "yearTo": 2016 }
+        ]
+      },
+      {
+        "name": "STS",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2005, "yearTo": 2011 }
+        ]
+      },
+      {
+        "name": "XLR",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2004, "yearTo": 2009 }
+        ]
+      },
+      {
+        "name": "XT4",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2018, "yearTo": null }
+        ]
+      },
+      {
+        "name": "XT5",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2016, "yearTo": null }
+        ]
+      },
+      {
+        "name": "XT6",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2019, "yearTo": null }
+        ]
+      },
+      {
+        "name": "XTS",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2012, "yearTo": 2019 }
+        ]
+      }
     ]
   },
   {
     "brand": "Chery",
     "models": [
-      { "name": "Amulet", "generations": [] },
-      { "name": "Arrizo 5", "generations": [] },
-      { "name": "Arrizo 6", "generations": [] },
-      { "name": "Arrizo 7", "generations": [] },
-      { "name": "Bonus", "generations": [] },
-      { "name": "Bonus 3", "generations": [] },
-      { "name": "CrossEastar", "generations": [] },
-      { "name": "E5", "generations": [] },
-      { "name": "Fora", "generations": [] },
-      { "name": "Fulwin", "generations": [] },
-      { "name": "IndiS", "generations": [] },
-      { "name": "Kimo", "generations": [] },
-      { "name": "M11", "generations": [] },
-      { "name": "QQ", "generations": [] },
-      { "name": "QQ6", "generations": [] },
-      { "name": "Tiggo", "generations": [] },
-      { "name": "Tiggo 2", "generations": [] },
-      { "name": "Tiggo 3", "generations": [] },
-      { "name": "Tiggo 4", "generations": [] },
-      { "name": "Tiggo 5", "generations": [] },
-      { "name": "Tiggo 7", "generations": [] },
-      { "name": "Tiggo 8", "generations": [] },
-      { "name": "Very", "generations": [] }
+      {
+        "name": "Amulet",
+        "generations": [
+          { "name": "Mk1 (A15)", "yearFrom": 2003, "yearTo": 2010 }
+        ]
+      },
+      {
+        "name": "Arrizo 5",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2015, "yearTo": 2021 },
+          { "name": "Mk2 (Plus)", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Arrizo 6",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2018, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Arrizo 7",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2013, "yearTo": 2021 }
+        ]
+      },
+      {
+        "name": "Bonus",
+        "generations": [
+          { "name": "Mk1 (A13)", "yearFrom": 2010, "yearTo": 2014 }
+        ]
+      },
+      {
+        "name": "Bonus 3",
+        "generations": [
+          { "name": "Mk1 (E3)", "yearFrom": 2011, "yearTo": 2016 }
+        ]
+      },
+      {
+        "name": "CrossEastar",
+        "generations": [
+          { "name": "Mk1 (B14)", "yearFrom": 2006, "yearTo": 2012 }
+        ]
+      },
+      {
+        "name": "E5",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2012, "yearTo": 2018 }
+        ]
+      },
+      {
+        "name": "Fora",
+        "generations": [
+          { "name": "Mk1 (A21)", "yearFrom": 2006, "yearTo": 2011 }
+        ]
+      },
+      {
+        "name": "Fulwin",
+        "generations": [
+          { "name": "Mk1 (A18)", "yearFrom": 2008, "yearTo": 2014 }
+        ]
+      },
+      {
+        "name": "IndiS",
+        "generations": [
+          { "name": "Mk1 (S18D)", "yearFrom": 2011, "yearTo": 2016 }
+        ]
+      },
+      {
+        "name": "Kimo",
+        "generations": [
+          { "name": "Mk1 (A1)", "yearFrom": 2007, "yearTo": 2013 }
+        ]
+      },
+      {
+        "name": "M11",
+        "generations": [
+          { "name": "Mk1 (A3)", "yearFrom": 2008, "yearTo": 2015 }
+        ]
+      },
+      {
+        "name": "QQ",
+        "generations": [
+          { "name": "Mk1 (S11)", "yearFrom": 2003, "yearTo": 2010 },
+          { "name": "Mk2 (S15)", "yearFrom": 2010, "yearTo": 2015 }
+        ]
+      },
+      {
+        "name": "QQ6",
+        "generations": [
+          { "name": "Mk1 (S21)", "yearFrom": 2006, "yearTo": 2012 }
+        ]
+      },
+      {
+        "name": "Tiggo",
+        "generations": [
+          { "name": "Mk1 (T11)", "yearFrom": 2005, "yearTo": 2013 },
+          { "name": "Mk2", "yearFrom": 2013, "yearTo": 2016 }
+        ]
+      },
+      {
+        "name": "Tiggo 2",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2016, "yearTo": 2021 },
+          { "name": "Mk2 (Pro)", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Tiggo 3",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2014, "yearTo": 2020 }
+        ]
+      },
+      {
+        "name": "Tiggo 4",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2017, "yearTo": 2021 },
+          { "name": "Mk2 (Pro)", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Tiggo 5",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2014, "yearTo": 2020 }
+        ]
+      },
+      {
+        "name": "Tiggo 7",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2016, "yearTo": 2020 },
+          { "name": "Mk2 (Pro)", "yearFrom": 2020, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Tiggo 8",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2018, "yearTo": 2021 },
+          { "name": "Mk2 (Pro)", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Very",
+        "generations": [
+          { "name": "Mk1 (A13)", "yearFrom": 2011, "yearTo": 2015 }
+        ]
+      }
     ]
   },
   {
     "brand": "ГАЗ",
     "models": [
-      { "name": "12 ЗИМ", "generations": [] },
-      { "name": "13 «Чайка»", "generations": [] },
-      { "name": "14 «Чайка»", "generations": [] },
-      { "name": "20 «Победа»", "generations": [] },
-      { "name": "21 «Волга»", "generations": [] },
-      { "name": "22 «Волга»", "generations": [] },
-      { "name": "23 «Волга»", "generations": [] },
-      { "name": "24 «Волга»", "generations": [] },
-      { "name": "3102 «Волга»", "generations": [] },
-      { "name": "31029 «Волга»", "generations": [] },
-      { "name": "3110 «Волга»", "generations": [] },
-      { "name": "31105 «Волга»", "generations": [] },
-      { "name": "3111 «Волга»", "generations": [] },
-      { "name": "69", "generations": [] },
-      { "name": "М-1", "generations": [] },
-      { "name": "М-20 «Победа»", "generations": [] },
-      { "name": "ГАЗель", "generations": [] },
-      { "name": "ГАЗель NEXT", "generations": [] },
-      { "name": "Соболь", "generations": [] },
-      { "name": "Валдай", "generations": [] },
-      { "name": "Садко", "generations": [] },
-      { "name": "Урал", "generations": [] }
+      {
+        "name": "12 ЗИМ",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1950, "yearTo": 1959 }
+        ]
+      },
+      {
+        "name": "13 «Чайка»",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1959, "yearTo": 1981 }
+        ]
+      },
+      {
+        "name": "14 «Чайка»",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1977, "yearTo": 1989 }
+        ]
+      },
+      {
+        "name": "20 «Победа»",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1946, "yearTo": 1958 }
+        ]
+      },
+      {
+        "name": "21 «Волга»",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1956, "yearTo": 1970 }
+        ]
+      },
+      {
+        "name": "22 «Волга»",
+        "generations": [
+          { "name": "Mk1 (универсал)", "yearFrom": 1962, "yearTo": 1970 }
+        ]
+      },
+      {
+        "name": "23 «Волга»",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1962, "yearTo": 1970 }
+        ]
+      },
+      {
+        "name": "24 «Волга»",
+        "generations": [
+          { "name": "Mk1 (ГАЗ-24)", "yearFrom": 1968, "yearTo": 1985 },
+          { "name": "Mk2 (ГАЗ-2410)", "yearFrom": 1985, "yearTo": 1992 }
+        ]
+      },
+      {
+        "name": "3102 «Волга»",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1981, "yearTo": 2008 }
+        ]
+      },
+      {
+        "name": "31029 «Волга»",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1992, "yearTo": 1997 }
+        ]
+      },
+      {
+        "name": "3110 «Волга»",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1997, "yearTo": 2004 }
+        ]
+      },
+      {
+        "name": "31105 «Волга»",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2004, "yearTo": 2009 }
+        ]
+      },
+      {
+        "name": "3111 «Волга»",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1998, "yearTo": 2004 }
+        ]
+      },
+      {
+        "name": "69",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1952, "yearTo": 1972 }
+        ]
+      },
+      {
+        "name": "М-1",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1936, "yearTo": 1943 }
+        ]
+      },
+      {
+        "name": "М-20 «Победа»",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1946, "yearTo": 1958 }
+        ]
+      },
+      {
+        "name": "ГАЗель",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1994, "yearTo": 2003 },
+          { "name": "Mk2 (Бизнес)", "yearFrom": 2003, "yearTo": 2014 }
+        ]
+      },
+      {
+        "name": "ГАЗель NEXT",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2013, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Соболь",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1998, "yearTo": 2014 },
+          { "name": "Mk2 (Бизнес)", "yearFrom": 2014, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Валдай",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2004, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Садко",
+        "generations": [
+          { "name": "Mk1 (ГАЗ-3308)", "yearFrom": 1997, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Урал",
+        "generations": [
+          { "name": "Mk1 (ГАЗ-61)", "yearFrom": 1938, "yearTo": 1945 }
+        ]
+      }
     ]
   },
   {
     "brand": "МАЗ",
     "models": [
-      { "name": "500", "generations": [] },
-      { "name": "5336", "generations": [] },
-      { "name": "5337", "generations": [] },
-      { "name": "5429", "generations": [] },
-      { "name": "5432", "generations": [] },
-      { "name": "5440", "generations": [] },
-      { "name": "5516", "generations": [] },
-      { "name": "5551", "generations": [] },
-      { "name": "6303", "generations": [] },
-      { "name": "6310", "generations": [] },
-      { "name": "6417", "generations": [] },
-      { "name": "6430", "generations": [] },
-      { "name": "6501", "generations": [] },
-      { "name": "6516", "generations": [] },
-      { "name": "6517", "generations": [] },
-      { "name": "6520", "generations": [] },
-      { "name": "6532", "generations": [] },
-      { "name": "700", "generations": [] },
-      { "name": "7516", "generations": [] },
-      { "name": "8378", "generations": [] },
-      { "name": "9386", "generations": [] },
-      { "name": "МАЗ-200", "generations": [] },
-      { "name": "МАЗ-500", "generations": [] },
-      { "name": "МАЗ-7907", "generations": [] }
+      {
+        "name": "500",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1963, "yearTo": 1977 }
+        ]
+      },
+      {
+        "name": "5336",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1985, "yearTo": null }
+        ]
+      },
+      {
+        "name": "5337",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1985, "yearTo": null }
+        ]
+      },
+      {
+        "name": "5429",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1977, "yearTo": 1992 }
+        ]
+      },
+      {
+        "name": "5432",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1984, "yearTo": 2000 }
+        ]
+      },
+      {
+        "name": "5440",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2004, "yearTo": null }
+        ]
+      },
+      {
+        "name": "5516",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1995, "yearTo": null }
+        ]
+      },
+      {
+        "name": "5551",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1986, "yearTo": null }
+        ]
+      },
+      {
+        "name": "6303",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1993, "yearTo": null }
+        ]
+      },
+      {
+        "name": "6310",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2003, "yearTo": null }
+        ]
+      },
+      {
+        "name": "6417",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1988, "yearTo": 2002 }
+        ]
+      },
+      {
+        "name": "6430",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2003, "yearTo": null }
+        ]
+      },
+      {
+        "name": "6501",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2007, "yearTo": null }
+        ]
+      },
+      {
+        "name": "6516",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2005, "yearTo": null }
+        ]
+      },
+      {
+        "name": "6517",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2010, "yearTo": null }
+        ]
+      },
+      {
+        "name": "6520",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2003, "yearTo": null }
+        ]
+      },
+      {
+        "name": "6532",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2011, "yearTo": null }
+        ]
+      },
+      {
+        "name": "700",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1966, "yearTo": 1978 }
+        ]
+      },
+      {
+        "name": "7516",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2012, "yearTo": null }
+        ]
+      },
+      {
+        "name": "8378",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2004, "yearTo": null }
+        ]
+      },
+      {
+        "name": "9386",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1993, "yearTo": null }
+        ]
+      },
+      {
+        "name": "МАЗ-200",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1951, "yearTo": 1966 }
+        ]
+      },
+      {
+        "name": "МАЗ-500",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1963, "yearTo": 1977 }
+        ]
+      },
+      {
+        "name": "МАЗ-7907",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1983, "yearTo": 1990 }
+        ]
+      }
     ]
   },
   {
     "brand": "УАЗ",
     "models": [
-      { "name": "3151", "generations": [] },
-      { "name": "3153", "generations": [] },
-      { "name": "3159", "generations": [] },
-      { "name": "3160", "generations": [] },
-      { "name": "3162", "generations": [] },
-      { "name": "469", "generations": [] },
-      { "name": "Hunter", "generations": [] },
-      { "name": "Patriot", "generations": [] },
-      { "name": "Pickup", "generations": [] },
-      { "name": "Профи", "generations": [] },
-      { "name": "Bukhanka", "generations": [] },
-      { "name": "Cargo", "generations": [] },
-      { "name": "Командирский", "generations": [] }
+      {
+        "name": "3151",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1985, "yearTo": 2013 }
+        ]
+      },
+      {
+        "name": "3153",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1997, "yearTo": 2004 }
+        ]
+      },
+      {
+        "name": "3159",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1999, "yearTo": 2009 }
+        ]
+      },
+      {
+        "name": "3160",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1997, "yearTo": 2007 }
+        ]
+      },
+      {
+        "name": "3162",
+        "generations": [
+          { "name": "Mk1 (Simbir)", "yearFrom": 1998, "yearTo": 2006 }
+        ]
+      },
+      {
+        "name": "469",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1972, "yearTo": 2011 }
+        ]
+      },
+      {
+        "name": "Hunter",
+        "generations": [
+          { "name": "Mk1 (3151)", "yearFrom": 2003, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Patriot",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2005, "yearTo": 2014 },
+          { "name": "Mk2", "yearFrom": 2014, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Pickup",
+        "generations": [
+          { "name": "Mk1 (23632)", "yearFrom": 2008, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Профи",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2017, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Bukhanka",
+        "generations": [
+          { "name": "Mk1 (452)", "yearFrom": 1965, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Cargo",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2008, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Командирский",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2000, "yearTo": 2005 }
+        ]
+      }
     ]
   },
   {
     "brand": "Changan",
     "models": [
-      { "name": "Alsvin", "generations": [] },
-      { "name": "Alsvin V3", "generations": [] },
-      { "name": "Alsvin V5", "generations": [] },
-      { "name": "Alsvin V7", "generations": [] },
-      { "name": "Benni", "generations": [] },
-      { "name": "BenBen", "generations": [] },
-      { "name": "BenBen Mini", "generations": [] },
-      { "name": "CS15", "generations": [] },
-      { "name": "CS35", "generations": [] },
-      { "name": "CS35 Plus", "generations": [] },
-      { "name": "CS55", "generations": [] },
-      { "name": "CS55 Plus", "generations": [] },
-      { "name": "CS75", "generations": [] },
-      { "name": "CS75 Plus", "generations": [] },
-      { "name": "CS85", "generations": [] },
-      { "name": "CS95", "generations": [] },
-      { "name": "CX20", "generations": [] },
-      { "name": "CX30", "generations": [] },
-      { "name": "Eado", "generations": [] },
-      { "name": "Eado DT", "generations": [] },
-      { "name": "Eado Plus", "generations": [] },
-      { "name": "Eado XT", "generations": [] },
-      { "name": "Hunter", "generations": [] },
-      { "name": "Honor", "generations": [] },
-      { "name": "Linmax", "generations": [] },
-      { "name": "Oushang", "generations": [] },
-      { "name": "Raeton", "generations": [] },
-      { "name": "Raeton Plus", "generations": [] },
-      { "name": "Shenlan", "generations": [] },
-      { "name": "Star", "generations": [] },
-      { "name": "Star 5", "generations": [] },
-      { "name": "Star 7", "generations": [] },
-      { "name": "Star 9", "generations": [] },
-      { "name": "Uni-K", "generations": [] },
-      { "name": "Uni-T", "generations": [] },
-      { "name": "Uni-V", "generations": [] },
-      { "name": "Z-Shine", "generations": [] }
+      {
+        "name": "Alsvin",
+        "generations": [
+          { "name": "Mk1 (V3)", "yearFrom": 2009, "yearTo": 2018 },
+          { "name": "Mk2", "yearFrom": 2020, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Alsvin V3",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2009, "yearTo": 2014 }
+        ]
+      },
+      {
+        "name": "Alsvin V5",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2012, "yearTo": 2018 }
+        ]
+      },
+      {
+        "name": "Alsvin V7",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2013, "yearTo": 2019 }
+        ]
+      },
+      {
+        "name": "Benni",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2006, "yearTo": 2018 }
+        ]
+      },
+      {
+        "name": "BenBen",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2018, "yearTo": null }
+        ]
+      },
+      {
+        "name": "BenBen Mini",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2019, "yearTo": null }
+        ]
+      },
+      {
+        "name": "CS15",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2016, "yearTo": null }
+        ]
+      },
+      {
+        "name": "CS35",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2012, "yearTo": 2019 },
+          { "name": "Mk2 (Plus)", "yearFrom": 2019, "yearTo": null }
+        ]
+      },
+      {
+        "name": "CS35 Plus",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2019, "yearTo": null }
+        ]
+      },
+      {
+        "name": "CS55",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2017, "yearTo": 2021 },
+          { "name": "Mk2 (Plus)", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "CS55 Plus",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "CS75",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2014, "yearTo": 2019 },
+          { "name": "Mk2 (Plus)", "yearFrom": 2019, "yearTo": null }
+        ]
+      },
+      {
+        "name": "CS75 Plus",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2019, "yearTo": null }
+        ]
+      },
+      {
+        "name": "CS85",
+        "generations": [
+          { "name": "Mk1 (Coupe)", "yearFrom": 2019, "yearTo": null }
+        ]
+      },
+      {
+        "name": "CS95",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2016, "yearTo": null }
+        ]
+      },
+      {
+        "name": "CX20",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2012, "yearTo": 2018 }
+        ]
+      },
+      {
+        "name": "CX30",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2014, "yearTo": 2020 }
+        ]
+      },
+      {
+        "name": "Eado",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2012, "yearTo": 2018 },
+          { "name": "Mk2", "yearFrom": 2018, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Eado DT",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2018, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Eado Plus",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2020, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Eado XT",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2013, "yearTo": 2018 }
+        ]
+      },
+      {
+        "name": "Hunter",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Honor",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2010, "yearTo": 2016 }
+        ]
+      },
+      {
+        "name": "Linmax",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Oushang",
+        "generations": [
+          { "name": "Mk1 (A600)", "yearFrom": 2018, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Raeton",
+        "generations": [
+          { "name": "Mk1 (CC)", "yearFrom": 2013, "yearTo": 2019 }
+        ]
+      },
+      {
+        "name": "Raeton Plus",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2019, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Shenlan",
+        "generations": [
+          { "name": "Mk1 (SL03)", "yearFrom": 2022, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Star",
+        "generations": [
+          { "name": "Mk1 (SC1010)", "yearFrom": 2003, "yearTo": 2014 }
+        ]
+      },
+      {
+        "name": "Star 5",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2009, "yearTo": 2016 }
+        ]
+      },
+      {
+        "name": "Star 7",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2010, "yearTo": 2018 }
+        ]
+      },
+      {
+        "name": "Star 9",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2013, "yearTo": 2019 }
+        ]
+      },
+      {
+        "name": "Uni-K",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Uni-T",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2020, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Uni-V",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2022, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Z-Shine",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2007, "yearTo": 2013 }
+        ]
+      }
     ]
   },
+{
+  "brand": "DAF",
+  "models": [
+    {
+      "name": "44",
+      "generations": [
+        { "name": "44 Series", "yearFrom": 1987, "yearTo": 1993 }
+      ]
+    },
+    {
+      "name": "45",
+      "generations": [
+        { "name": "45 Series (45-60)", "yearFrom": 1993, "yearTo": 1997 },
+        { "name": "45 Series (45-70)", "yearFrom": 1997, "yearTo": 2002 }
+      ]
+    },
+    {
+      "name": "46",
+      "generations": [
+        { "name": "46 Series", "yearFrom": 1987, "yearTo": 1993 }
+      ]
+    },
+    {
+      "name": "55",
+      "generations": [
+        { "name": "55 Series (55-70)", "yearFrom": 1993, "yearTo": 1997 },
+        { "name": "55 Series (55-80)", "yearFrom": 1997, "yearTo": 2002 }
+      ]
+    },
+    {
+      "name": "66",
+      "generations": [
+        { "name": "66 Series", "yearFrom": 1987, "yearTo": 1993 }
+      ]
+    },
+    {
+      "name": "75",
+      "generations": [
+        { "name": "75 Series", "yearFrom": 1987, "yearTo": 1993 },
+        { "name": "75 Series (75-130)", "yearFrom": 1993, "yearTo": 1997 },
+        { "name": "75 Series (75-150)", "yearFrom": 1997, "yearTo": 2002 }
+      ]
+    },
+    {
+      "name": "85",
+      "generations": [
+        { "name": "85 Series", "yearFrom": 1987, "yearTo": 1993 },
+        { "name": "85 Series (85-230)", "yearFrom": 1993, "yearTo": 1997 },
+        { "name": "85 Series (85-350)", "yearFrom": 1997, "yearTo": 2002 }
+      ]
+    },
+    {
+      "name": "95",
+      "generations": [
+        { "name": "95 Series", "yearFrom": 1987, "yearTo": 1993 },
+        { "name": "95 Series (95-350)", "yearFrom": 1993, "yearTo": 1997 },
+        { "name": "95 Series (95-400)", "yearFrom": 1997, "yearTo": 2002 },
+        { "name": "95 XF", "yearFrom": 2002, "yearTo": 2006 }
+      ]
+    },
+    {
+      "name": "CF",
+      "generations": [
+        { "name": "CF (LF by DAF)", "yearFrom": 1992, "yearTo": 2001 },
+        { "name": "CF 65/75/85", "yearFrom": 2001, "yearTo": 2008 },
+        { "name": "CF (Euro 5)", "yearFrom": 2008, "yearTo": 2013 },
+        { "name": "CF (Euro 6)", "yearFrom": 2013, "yearTo": 2021 },
+        { "name": "CF (New Generation)", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "LF",
+      "generations": [
+        { "name": "LF 45/55 (by Leyland)", "yearFrom": 2001, "yearTo": 2008 },
+        { "name": "LF (Euro 5)", "yearFrom": 2008, "yearTo": 2013 },
+        { "name": "LF (Euro 6)", "yearFrom": 2013, "yearTo": null }
+      ]
+    },
+    {
+      "name": "XF",
+      "generations": [
+        { "name": "XF 95", "yearFrom": 2002, "yearTo": 2006 },
+        { "name": "XF106 (Euro 6)", "yearFrom": 2012, "yearTo": 2017 },
+        { "name": "XF (New Generation)", "yearFrom": 2017, "yearTo": 2021 },
+        { "name": "XF (New Generation II)", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "XF105",
+      "generations": [
+        { "name": "XF105", "yearFrom": 2006, "yearTo": 2012 }
+      ]
+    },
+    {
+      "name": "XF480",
+      "generations": [
+        { "name": "XF480 (Euro 6)", "yearFrom": 2013, "yearTo": 2017 },
+        { "name": "XF480 (New Generation)", "yearFrom": 2017, "yearTo": 2021 },
+        { "name": "XF480 (New Generation II)", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "XF530",
+      "generations": [
+        { "name": "XF530 (Euro 6)", "yearFrom": 2013, "yearTo": 2017 },
+        { "name": "XF530 (New Generation)", "yearFrom": 2017, "yearTo": 2021 },
+        { "name": "XF530 (New Generation II)", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "XG",
+      "generations": [
+        { "name": "XG (New Generation)", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "XG+",
+      "generations": [
+        { "name": "XG+ (New Generation)", "yearFrom": 2021, "yearTo": null }
+      ]
+    }
+  ]
+},
   {
-    "brand": "DAF",
-    "models": [
-      { "name": "44", "generations": [] },
-      { "name": "45", "generations": [] },
-      { "name": "46", "generations": [] },
-      { "name": "55", "generations": [] },
-      { "name": "66", "generations": [] },
-      { "name": "75", "generations": [] },
-      { "name": "85", "generations": [] },
-      { "name": "95", "generations": [] },
-      { "name": "CF", "generations": [] },
-      { "name": "LF", "generations": [] },
-      { "name": "XF", "generations": [] },
-      { "name": "XF105", "generations": [] },
-      { "name": "XF480", "generations": [] },
-      { "name": "XF530", "generations": [] },
-      { "name": "XG", "generations": [] },
-      { "name": "XG+", "generations": [] }
-    ]
-  },
-  {
-    "brand": "Geely",
-    "models": [
-      { "name": "Atlas", "generations": [] },
-      { "name": "Atlas Pro", "generations": [] },
-      { "name": "Azkarra", "generations": [] },
-      { "name": "Borui", "generations": [] },
-      { "name": "Boyue", "generations": [] },
-      { "name": "Boyue Cool", "generations": [] },
-      { "name": "Boyue L", "generations": [] },
-      { "name": "CK", "generations": [] },
-      { "name": "Coolray", "generations": [] },
-      { "name": "Emgrand", "generations": [] },
-      { "name": "Emgrand 7", "generations": [] },
-      { "name": "Emgrand EC7", "generations": [] },
-      { "name": "Emgrand EV", "generations": [] },
-      { "name": "Emgrand GL", "generations": [] },
-      { "name": "Emgrand GS", "generations": [] },
-      { "name": "Emgrand GT", "generations": [] },
-      { "name": "Emgrand X7", "generations": [] },
-      { "name": "GC9", "generations": [] },
-      { "name": "Geometry A", "generations": [] },
-      { "name": "Geometry C", "generations": [] },
-      { "name": "GX7", "generations": [] },
-      { "name": "Haoqing", "generations": [] },
-      { "name": "LC", "generations": [] },
-      { "name": "MK", "generations": [] },
-      { "name": "Monjaro", "generations": [] },
-      { "name": "Okavango", "generations": [] },
-      { "name": "Panda", "generations": [] },
-      { "name": "SC7", "generations": [] },
-      { "name": "Tugella", "generations": [] },
-      { "name": "TX4", "generations": [] },
-      { "name": "Vision", "generations": [] },
-      { "name": "X7", "generations": [] }
-    ]
-  },
+  "brand": "Geely",
+  "models": [
+    {
+      "name": "Atlas",
+      "generations": [
+        { "name": "Mk1 (NL-3)", "yearFrom": 2016, "yearTo": 2022 },
+        { "name": "Mk2", "yearFrom": 2022, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Atlas Pro",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Azkarra",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2019, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Borui",
+      "generations": [
+        { "name": "Mk1 (GC9)", "yearFrom": 2015, "yearTo": 2019 },
+        { "name": "Mk2", "yearFrom": 2019, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Boyue",
+      "generations": [
+        { "name": "Mk1 (NL-3)", "yearFrom": 2016, "yearTo": 2021 },
+        { "name": "Mk2", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Boyue Cool",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2022, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Boyue L",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2022, "yearTo": null }
+      ]
+    },
+    {
+      "name": "CK",
+      "generations": [
+        { "name": "Mk1 (CK-1)", "yearFrom": 2005, "yearTo": 2012 },
+        { "name": "Mk2 (CK-2)", "yearFrom": 2012, "yearTo": 2016 }
+      ]
+    },
+    {
+      "name": "Coolray",
+      "generations": [
+        { "name": "Mk1 (SX11)", "yearFrom": 2019, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Emgrand",
+      "generations": [
+        { "name": "Mk1 (EC7)", "yearFrom": 2009, "yearTo": 2016 },
+        { "name": "Mk2", "yearFrom": 2016, "yearTo": 2021 },
+        { "name": "Mk3", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Emgrand 7",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2016, "yearTo": 2021 },
+        { "name": "Mk2", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Emgrand EC7",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2009, "yearTo": 2014 },
+        { "name": "Mk2", "yearFrom": 2014, "yearTo": 2018 }
+      ]
+    },
+    {
+      "name": "Emgrand EV",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2015, "yearTo": 2019 },
+        { "name": "Mk2 (EV Pro)", "yearFrom": 2019, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Emgrand GL",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2016, "yearTo": 2021 },
+        { "name": "Mk2", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Emgrand GS",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2016, "yearTo": 2021 }
+      ]
+    },
+    {
+      "name": "Emgrand GT",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2015, "yearTo": 2021 }
+      ]
+    },
+    {
+      "name": "Emgrand X7",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2011, "yearTo": 2015 },
+        { "name": "Mk2", "yearFrom": 2015, "yearTo": 2019 },
+        { "name": "Mk3 (Pro)", "yearFrom": 2019, "yearTo": 2022 }
+      ]
+    },
+    {
+      "name": "GC9",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2015, "yearTo": 2019 }
+      ]
+    },
+    {
+      "name": "Geometry A",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2019, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Geometry C",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2020, "yearTo": null }
+      ]
+    },
+    {
+      "name": "GX7",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2013, "yearTo": 2018 }
+      ]
+    },
+    {
+      "name": "Haoqing",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 1998, "yearTo": 2006 }
+      ]
+    },
+    {
+      "name": "LC",
+      "generations": [
+        { "name": "Mk1 (LC Cross)", "yearFrom": 2008, "yearTo": 2016 }
+      ]
+    },
+    {
+      "name": "MK",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2006, "yearTo": 2013 },
+        { "name": "Mk2", "yearFrom": 2013, "yearTo": 2018 }
+      ]
+    },
+    {
+      "name": "Monjaro",
+      "generations": [
+        { "name": "Mk1 (KX11)", "yearFrom": 2022, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Okavango",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2020, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Panda",
+      "generations": [
+        { "name": "Mk1 (LC)", "yearFrom": 2008, "yearTo": 2017 }
+      ]
+    },
+    {
+      "name": "SC7",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2010, "yearTo": 2016 }
+      ]
+    },
+    {
+      "name": "Tugella",
+      "generations": [
+        { "name": "Mk1 (FY11)", "yearFrom": 2019, "yearTo": null }
+      ]
+    },
+    {
+      "name": "TX4",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2006, "yearTo": 2017 }
+      ]
+    },
+    {
+      "name": "Vision",
+      "generations": [
+        { "name": "Mk1 (FC)", "yearFrom": 2006, "yearTo": 2013 },
+        { "name": "Mk2", "yearFrom": 2013, "yearTo": 2018 },
+        { "name": "Mk3", "yearFrom": 2018, "yearTo": null }
+      ]
+    },
+    {
+      "name": "X7",
+      "generations": [
+        { "name": "Mk1", "yearFrom": 2012, "yearTo": 2018 },
+        { "name": "Mk2 (Sport)", "yearFrom": 2018, "yearTo": null }
+      ]
+    }
+  ]
+},
 {
   "brand": "Zeekr",
   "models": [
@@ -10121,150 +11147,570 @@
   {
     "brand": "GMC",
     "models": [
-      { "name": "Acadia", "generations": [] },
-      { "name": "Canyon", "generations": [] },
-      { "name": "Envoy", "generations": [] },
-      { "name": "Hummer EV", "generations": [] },
-      { "name": "Jimmy", "generations": [] },
-      { "name": "Safari", "generations": [] },
-      { "name": "Savana", "generations": [] },
-      { "name": "Sierra", "generations": [] },
-      { "name": "Sonoma", "generations": [] },
-      { "name": "Syclone", "generations": [] },
-      { "name": "Terrain", "generations": [] },
-      { "name": "Typhoon", "generations": [] },
-      { "name": "Vandura", "generations": [] },
-      { "name": "Yukon", "generations": [] },
-      { "name": "Yukon XL", "generations": [] }
+      {
+        "name": "Acadia",
+        "generations": [
+          { "name": "Mk1 (GMT355)", "yearFrom": 2007, "yearTo": 2012 },
+          { "name": "Mk1 facelift (GMT355)", "yearFrom": 2013, "yearTo": 2016 },
+          { "name": "Mk2 (C1XX)", "yearFrom": 2017, "yearTo": 2023 },
+          { "name": "Mk3", "yearFrom": 2024, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Canyon",
+        "generations": [
+          { "name": "Mk1 (GMT355)", "yearFrom": 2004, "yearTo": 2012 },
+          { "name": "Mk2 (GMT31XX)", "yearFrom": 2015, "yearTo": 2022 },
+          { "name": "Mk3", "yearFrom": 2023, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Envoy",
+        "generations": [
+          { "name": "Mk1 (GMT330)", "yearFrom": 1998, "yearTo": 2000 },
+          { "name": "Mk2 (GMT360)", "yearFrom": 2002, "yearTo": 2009 }
+        ]
+      },
+      {
+        "name": "Hummer EV",
+        "generations": [
+          { "name": "Mk1 (BT1)", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Jimmy",
+        "generations": [
+          { "name": "Mk1 (K5)", "yearFrom": 1970, "yearTo": 1991 },
+          { "name": "Mk2 (S-15/GMT330)", "yearFrom": 1983, "yearTo": 2005 }
+        ]
+      },
+      {
+        "name": "Safari",
+        "generations": [
+          { "name": "Mk1 (GMT100)", "yearFrom": 1985, "yearTo": 1994 },
+          { "name": "Mk2 (GMT200)", "yearFrom": 1995, "yearTo": 2005 }
+        ]
+      },
+      {
+        "name": "Savana",
+        "generations": [
+          { "name": "Mk1 (GMT600)", "yearFrom": 1996, "yearTo": 2002 },
+          { "name": "Mk2 (GMT600)", "yearFrom": 2003, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Sierra",
+        "generations": [
+          { "name": "Mk1 (GMT400)", "yearFrom": 1988, "yearTo": 1998 },
+          { "name": "Mk2 (GMT800)", "yearFrom": 1999, "yearTo": 2006 },
+          { "name": "Mk3 (GMT900)", "yearFrom": 2007, "yearTo": 2013 },
+          { "name": "Mk4 (K2XX)", "yearFrom": 2014, "yearTo": 2018 },
+          { "name": "Mk5 (T1XX)", "yearFrom": 2019, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Sonoma",
+        "generations": [
+          { "name": "Mk1 (S-15)", "yearFrom": 1983, "yearTo": 1993 },
+          { "name": "Mk2 (GMT400)", "yearFrom": 1994, "yearTo": 2004 }
+        ]
+      },
+      {
+        "name": "Syclone",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1991, "yearTo": 1991 }
+        ]
+      },
+      {
+        "name": "Terrain",
+        "generations": [
+          { "name": "Mk1 (GMT300)", "yearFrom": 2010, "yearTo": 2017 },
+          { "name": "Mk2 (GMT300)", "yearFrom": 2018, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Typhoon",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 1992, "yearTo": 1993 }
+        ]
+      },
+      {
+        "name": "Vandura",
+        "generations": [
+          { "name": "Mk1 (G-series)", "yearFrom": 1971, "yearTo": 1995 }
+        ]
+      },
+      {
+        "name": "Yukon",
+        "generations": [
+          { "name": "Mk1 (GMT330)", "yearFrom": 1992, "yearTo": 1999 },
+          { "name": "Mk2 (GMT800)", "yearFrom": 2000, "yearTo": 2006 },
+          { "name": "Mk3 (GMT900)", "yearFrom": 2007, "yearTo": 2014 },
+          { "name": "Mk4 (K2XX)", "yearFrom": 2015, "yearTo": 2020 },
+          { "name": "Mk5 (T1XX)", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Yukon XL",
+        "generations": [
+          { "name": "Mk1 (GMT800)", "yearFrom": 2000, "yearTo": 2006 },
+          { "name": "Mk2 (GMT900)", "yearFrom": 2007, "yearTo": 2014 },
+          { "name": "Mk3 (K2XX)", "yearFrom": 2015, "yearTo": 2020 },
+          { "name": "Mk4 (T1XX)", "yearFrom": 2021, "yearTo": null }
+        ]
+      }
     ]
   },
   {
     "brand": "Great Wall",
     "models": [
-      { "name": "Coolbear", "generations": [] },
-      { "name": "Cowry", "generations": [] },
-      { "name": "Deer", "generations": [] },
-      { "name": "Florid", "generations": [] },
-      { "name": "Hover", "generations": [] },
-      { "name": "Hover H3", "generations": [] },
-      { "name": "Hover H5", "generations": [] },
-      { "name": "Hover H6", "generations": [] },
-      { "name": "Hover H9", "generations": [] },
-      { "name": "Hover M1", "generations": [] },
-      { "name": "Hover M2", "generations": [] },
-      { "name": "Hover M4", "generations": [] },
-      { "name": "Pegasus", "generations": [] },
-      { "name": "Peri", "generations": [] },
-      { "name": "Poer", "generations": [] },
-      { "name": "Safe", "generations": [] },
-      { "name": "Sailor", "generations": [] },
-      { "name": "Sing", "generations": [] },
-      { "name": "Socool", "generations": [] },
-      { "name": "Voleex C10", "generations": [] },
-      { "name": "Voleex C20", "generations": [] },
-      { "name": "Voleex C30", "generations": [] },
-      { "name": "Wingle", "generations": [] }
-    ]
-  },
-  {
-    "brand": "Haval",
-    "models": [
-      { "name": "Dargo", "generations": [] },
-      { "name": "F5", "generations": [] },
-      { "name": "F7", "generations": [] },
-      { "name": "F7x", "generations": [] },
-      { "name": "H2", "generations": [] },
-      { "name": "H4", "generations": [] },
-      { "name": "H5", "generations": [] },
-      { "name": "H6", "generations": [] },
-      { "name": "H6 Coupe", "generations": [] },
-      { "name": "H6 GT", "generations": [] },
-      { "name": "H7", "generations": [] },
-      { "name": "H8", "generations": [] },
-      { "name": "H9", "generations": [] },
-      { "name": "Jolion", "generations": [] },
-      { "name": "M6", "generations": [] },
-      { "name": "X5", "generations": [] }
+      {
+        "name": "Coolbear",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2009, "yearTo": 2013 }
+        ]
+      },
+      {
+        "name": "Cowry",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2007, "yearTo": 2014 }
+        ]
+      },
+      {
+        "name": "Deer",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2002, "yearTo": 2007 }
+        ]
+      },
+      {
+        "name": "Florid",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2008, "yearTo": 2015 }
+        ]
+      },
+      {
+        "name": "Hover",
+        "generations": [
+          { "name": "Mk1 (H2)", "yearFrom": 2005, "yearTo": 2011 }
+        ]
+      },
+      {
+        "name": "Hover H3",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2005, "yearTo": 2010 },
+          { "name": "Mk2", "yearFrom": 2010, "yearTo": 2017 }
+        ]
+      },
+      {
+        "name": "Hover H5",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2010, "yearTo": 2017 }
+        ]
+      },
+      {
+        "name": "Hover H6",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2011, "yearTo": 2017 },
+          { "name": "Mk2", "yearFrom": 2017, "yearTo": 2021 },
+          { "name": "Mk3", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Hover H9",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2014, "yearTo": 2021 },
+          { "name": "Mk2", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Hover M1",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2008, "yearTo": 2013 }
+        ]
+      },
+      {
+        "name": "Hover M2",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2011, "yearTo": 2016 }
+        ]
+      },
+      {
+        "name": "Hover M4",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2012, "yearTo": 2017 }
+        ]
+      },
+      {
+        "name": "Pegasus",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2004, "yearTo": 2010 }
+        ]
+      },
+      {
+        "name": "Peri",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2006, "yearTo": 2012 }
+        ]
+      },
+      {
+        "name": "Poer",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2019, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Safe",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2002, "yearTo": 2012 }
+        ]
+      },
+      {
+        "name": "Sailor",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2021, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Sing",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2008, "yearTo": 2013 }
+        ]
+      },
+      {
+        "name": "Socool",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2005, "yearTo": 2010 }
+        ]
+      },
+      {
+        "name": "Voleex C10",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2010, "yearTo": 2015 }
+        ]
+      },
+      {
+        "name": "Voleex C20",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2010, "yearTo": 2015 }
+        ]
+      },
+      {
+        "name": "Voleex C30",
+        "generations": [
+          { "name": "Mk1", "yearFrom": 2010, "yearTo": 2016 }
+        ]
+      },
+      {
+        "name": "Wingle",
+        "generations": [
+          { "name": "Mk1 (Wingle 3)", "yearFrom": 2006, "yearTo": 2011 },
+          { "name": "Mk2 (Wingle 5)", "yearFrom": 2011, "yearTo": 2018 },
+          { "name": "Mk3 (Wingle 6)", "yearFrom": 2016, "yearTo": null },
+          { "name": "Mk4 (Wingle 7)", "yearFrom": 2018, "yearTo": null }
+        ]
+      }
     ]
   },
 {
-  "brand": "Voyah",
+  "brand": "Haval",
   "models": [
     {
-      "name": "Courage",
+      "name": "Chitu",
       "generations": [
-        { "name": "Courage 1", "yearFrom": 2024, "yearTo": null }
+        { "name": "Chitu", "yearFrom": 2021, "yearTo": null }
       ]
     },
     {
-      "name": "Dream",
+      "name": "Chulian",
       "generations": [
-        { "name": "Dream 1", "yearFrom": 2022, "yearTo": 2023 },
-        { "name": "Dream 1 restyling", "yearFrom": 2023, "yearTo": 2024 },
-        { "name": "Dream 2", "yearFrom": 2024, "yearTo": null }
+        { "name": "Chulian", "yearFrom": 2014, "yearTo": 2018 }
       ]
     },
     {
-      "name": "Dream Plus",
+      "name": "Cool Dog",
       "generations": [
-        { "name": "Dream Plus 1", "yearFrom": 2023, "yearTo": null }
+        { "name": "Cool Dog", "yearFrom": 2022, "yearTo": null }
       ]
     },
     {
-      "name": "Free",
+      "name": "Dargo",
       "generations": [
-        { "name": "Free 1", "yearFrom": 2021, "yearTo": 2023 },
-        { "name": "Free 1 restyling", "yearFrom": 2023, "yearTo": 2024 },
-        { "name": "Free 2", "yearFrom": 2024, "yearTo": null }
+        { "name": "Dargo", "yearFrom": 2020, "yearTo": 2023 },
+        { "name": "Dargo Pro", "yearFrom": 2023, "yearTo": null },
+        { "name": "Dargo X", "yearFrom": 2022, "yearTo": null }
       ]
     },
     {
-      "name": "Free Plus",
+      "name": "F5",
       "generations": [
-        { "name": "Free Plus 1", "yearFrom": 2023, "yearTo": null }
+        { "name": "F5", "yearFrom": 2018, "yearTo": 2021 }
       ]
     },
     {
-      "name": "Passion",
+      "name": "F7",
       "generations": [
-        { "name": "Passion 1", "yearFrom": 2022, "yearTo": 2024 },
-        { "name": "Passion 1 restyling", "yearFrom": 2024, "yearTo": null }
+        { "name": "F7", "yearFrom": 2018, "yearTo": 2021 },
+        { "name": "F7 (facelift)", "yearFrom": 2021, "yearTo": 2023 },
+        { "name": "F7 II", "yearFrom": 2023, "yearTo": null }
       ]
     },
     {
-      "name": "Passion EV",
+      "name": "F7x",
       "generations": [
-        { "name": "Passion EV 1", "yearFrom": 2023, "yearTo": null }
+        { "name": "F7x", "yearFrom": 2019, "yearTo": 2021 },
+        { "name": "F7x (facelift)", "yearFrom": 2021, "yearTo": 2023 },
+        { "name": "F7x II", "yearFrom": 2023, "yearTo": null }
       ]
     },
     {
-      "name": "Passion EVR",
+      "name": "H-Dog",
       "generations": [
-        { "name": "Passion EVR 1", "yearFrom": 2023, "yearTo": null }
+        { "name": "H-Dog", "yearFrom": 2022, "yearTo": null }
       ]
     },
     {
-      "name": "Passion L",
+      "name": "H1",
       "generations": [
-        { "name": "Passion L 1", "yearFrom": 2024, "yearTo": null }
+        { "name": "H1", "yearFrom": 2012, "yearTo": 2016 }
       ]
     },
     {
-      "name": "Taishan",
+      "name": "H2",
       "generations": [
-        { "name": "Taishan 1", "yearFrom": 2024, "yearTo": null }
+        { "name": "H2", "yearFrom": 2014, "yearTo": 2018 },
+        { "name": "H2 (facelift)", "yearFrom": 2018, "yearTo": 2021 }
       ]
     },
     {
-      "name": "i-Land",
-      "generations": []
+      "name": "H2s",
+      "generations": [
+        { "name": "H2s", "yearFrom": 2016, "yearTo": 2019 }
+      ]
     },
     {
-      "name": "Pursuit",
-      "generations": []
+      "name": "H3",
+      "generations": [
+        { "name": "H3", "yearFrom": 2010, "yearTo": 2014 },
+        { "name": "H3 (facelift)", "yearFrom": 2014, "yearTo": 2017 }
+      ]
+    },
+    {
+      "name": "H4",
+      "generations": [
+        { "name": "H4", "yearFrom": 2017, "yearTo": 2021 },
+        { "name": "H4 Pro", "yearFrom": 2019, "yearTo": 2021 }
+      ]
+    },
+    {
+      "name": "H4 Pro",
+      "generations": [
+        { "name": "H4 Pro", "yearFrom": 2019, "yearTo": 2021 }
+      ]
+    },
+    {
+      "name": "H5",
+      "generations": [
+        { "name": "H5", "yearFrom": 2010, "yearTo": 2014 },
+        { "name": "H5 (facelift)", "yearFrom": 2014, "yearTo": 2018 },
+        { "name": "H5 Classic", "yearFrom": 2018, "yearTo": 2021 }
+      ]
+    },
+    {
+      "name": "H6",
+      "generations": [
+        { "name": "H6 I", "yearFrom": 2011, "yearTo": 2014 },
+        { "name": "H6 II", "yearFrom": 2014, "yearTo": 2017 },
+        { "name": "H6 III (Sport)", "yearFrom": 2017, "yearTo": 2020 },
+        { "name": "H6 III (facelift)", "yearFrom": 2020, "yearTo": 2023 },
+        { "name": "H6 IV", "yearFrom": 2023, "yearTo": null }
+      ]
+    },
+    {
+      "name": "H6 Coupe",
+      "generations": [
+        { "name": "H6 Coupe", "yearFrom": 2015, "yearTo": 2018 },
+        { "name": "H6 Coupe (facelift)", "yearFrom": 2018, "yearTo": 2021 }
+      ]
+    },
+    {
+      "name": "H6 GT",
+      "generations": [
+        { "name": "H6 GT", "yearFrom": 2020, "yearTo": 2023 },
+        { "name": "H6 GT II", "yearFrom": 2023, "yearTo": null }
+      ]
+    },
+    {
+      "name": "H6L",
+      "generations": [
+        { "name": "H6L", "yearFrom": 2017, "yearTo": 2020 }
+      ]
+    },
+    {
+      "name": "H6S",
+      "generations": [
+        { "name": "H6S", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "H7",
+      "generations": [
+        { "name": "H7", "yearFrom": 2015, "yearTo": 2019 },
+        { "name": "H7 (facelift)", "yearFrom": 2019, "yearTo": 2022 },
+        { "name": "H7 II", "yearFrom": 2022, "yearTo": null }
+      ]
+    },
+    {
+      "name": "H8",
+      "generations": [
+        { "name": "H8", "yearFrom": 2013, "yearTo": 2016 },
+        { "name": "H8 (facelift)", "yearFrom": 2016, "yearTo": 2018 }
+      ]
+    },
+    {
+      "name": "H9",
+      "generations": [
+        { "name": "H9", "yearFrom": 2014, "yearTo": 2017 },
+        { "name": "H9 (facelift)", "yearFrom": 2017, "yearTo": 2019 },
+        { "name": "H9 II", "yearFrom": 2019, "yearTo": 2022 },
+        { "name": "H9 II (facelift)", "yearFrom": 2022, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Jolion",
+      "generations": [
+        { "name": "Jolion", "yearFrom": 2020, "yearTo": 2023 },
+        { "name": "Jolion Pro", "yearFrom": 2023, "yearTo": null },
+        { "name": "Jolion Hybrid", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "M6",
+      "generations": [
+        { "name": "M6", "yearFrom": 2017, "yearTo": 2020 },
+        { "name": "M6 Plus", "yearFrom": 2020, "yearTo": null }
+      ]
+    },
+    {
+      "name": "M6 Plus",
+      "generations": [
+        { "name": "M6 Plus", "yearFrom": 2020, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Raptor",
+      "generations": [
+        { "name": "Raptor", "yearFrom": 2021, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Shenshou",
+      "generations": [
+        { "name": "Shenshou", "yearFrom": 2022, "yearTo": null },
+        { "name": "Shenshou DHT", "yearFrom": 2022, "yearTo": null }
+      ]
+    },
+    {
+      "name": "X5",
+      "generations": [
+        { "name": "X5", "yearFrom": 2017, "yearTo": 2020 }
+      ]
+    },
+    {
+      "name": "Xiaolong",
+      "generations": [
+        { "name": "Xiaolong", "yearFrom": 2023, "yearTo": null }
+      ]
+    },
+    {
+      "name": "Xiaolong Max",
+      "generations": [
+        { "name": "Xiaolong Max", "yearFrom": 2023, "yearTo": null }
+      ]
     }
   ]
 },
+  {
+    "brand": "Voyah",
+    "models": [
+      {
+        "name": "Courage",
+        "generations": [
+          { "name": "1st generation", "yearFrom": 2024, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Dream",
+        "generations": [
+          { "name": "1st generation", "yearFrom": 2022, "yearTo": 2023 },
+          { "name": "1st generation facelift", "yearFrom": 2023, "yearTo": 2024 },
+          { "name": "2nd generation", "yearFrom": 2024, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Dream Plus",
+        "generations": [
+          { "name": "1st generation", "yearFrom": 2023, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Free",
+        "generations": [
+          { "name": "1st generation", "yearFrom": 2021, "yearTo": 2023 },
+          { "name": "1st generation facelift", "yearFrom": 2023, "yearTo": 2024 },
+          { "name": "2nd generation", "yearFrom": 2024, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Free Plus",
+        "generations": [
+          { "name": "1st generation", "yearFrom": 2023, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Passion",
+        "generations": [
+          { "name": "1st generation", "yearFrom": 2022, "yearTo": 2024 },
+          { "name": "1st generation facelift", "yearFrom": 2024, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Passion EV",
+        "generations": [
+          { "name": "1st generation", "yearFrom": 2023, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Passion EVR",
+        "generations": [
+          { "name": "1st generation", "yearFrom": 2023, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Passion L",
+        "generations": [
+          { "name": "1st generation", "yearFrom": 2024, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Taishan",
+        "generations": [
+          { "name": "1st generation", "yearFrom": 2024, "yearTo": null }
+        ]
+      },
+      {
+        "name": "i-Land",
+        "generations": [
+          { "name": "1st generation", "yearFrom": 2024, "yearTo": null }
+        ]
+      },
+      {
+        "name": "Pursuit",
+        "generations": [
+          { "name": "1st generation", "yearFrom": 2024, "yearTo": null }
+        ]
+      }
+    ]
+  },
   {
     "brand": "Wartburg",
     "models": [
@@ -10656,30 +12102,41 @@
     "models": [
       {
         "name": "2R Series",
-        "generations": []
+        "generations": [
+          { "name": "2025R / 2032R / 2038R", "yearFrom": 2016, "yearTo": null }
+        ]
       },
       {
         "name": "5E Series",
-        "generations": []
+        "generations": [
+          { "name": "5075E / 5085E / 5100E", "yearFrom": 2012, "yearTo": null }
+        ]
       },
       {
         "name": "5M Series",
-        "generations": []
+        "generations": [
+          { "name": "5085M – 5115M (1st gen)", "yearFrom": 2011, "yearTo": 2018 },
+          { "name": "5085M – 5115M (2nd gen)", "yearFrom": 2018, "yearTo": null }
+        ]
       },
       {
         "name": "6M Series",
-        "generations": []
+        "generations": [
+          { "name": "6105M – 6175M (1st gen)", "yearFrom": 2012, "yearTo": 2020 },
+          { "name": "6105M – 6175M (2nd gen)", "yearFrom": 2020, "yearTo": null }
+        ]
       },
       {
         "name": "6R Series",
-        "generations": []
+        "generations": [
+          { "name": "6110R – 6250R (1st gen)", "yearFrom": 2013, "yearTo": 2020 },
+          { "name": "6110R – 6250R (2nd gen)", "yearFrom": 2020, "yearTo": null }
+        ]
       },
       {
         "name": "7R Series",
         "generations": [
-          { "name": "7R 230", "yearFrom": null, "yearTo": null },
-          { "name": "7R 250", "yearFrom": null, "yearTo": null },
-          { "name": "7R 270", "yearFrom": null, "yearTo": null }
+          { "name": "7R 230 / 250 / 270 / 290 / 310 / 330 / 350", "yearFrom": 2019, "yearTo": null }
         ]
       }
     ]
@@ -10689,27 +12146,39 @@
     "models": [
       {
         "name": "Cargo",
-        "generations": []
+        "generations": [
+          { "name": "Cargo (curtainsider)", "yearFrom": 2000, "yearTo": null }
+        ]
       },
       {
         "name": "Cool",
-        "generations": []
+        "generations": [
+          { "name": "Cool (refrigerated semi-trailer)", "yearFrom": 2000, "yearTo": null }
+        ]
       },
       {
         "name": "Tipper",
-        "generations": []
+        "generations": [
+          { "name": "Tipper (dump semi-trailer)", "yearFrom": 2000, "yearTo": null }
+        ]
       },
       {
         "name": "Tankplex",
-        "generations": []
+        "generations": [
+          { "name": "Tankplex (tank semi-trailer)", "yearFrom": 2005, "yearTo": null }
+        ]
       },
       {
         "name": "Triplex",
-        "generations": []
+        "generations": [
+          { "name": "Triplex (3-axle tipper)", "yearFrom": 2005, "yearTo": null }
+        ]
       },
       {
         "name": "Duplex",
-        "generations": []
+        "generations": [
+          { "name": "Duplex (2-axle tipper)", "yearFrom": 2005, "yearTo": null }
+        ]
       }
     ]
   },
@@ -10718,23 +12187,33 @@
     "models": [
       {
         "name": "PC30MR‑5",
-        "generations": []
+        "generations": [
+          { "name": "MR-5 series", "yearFrom": 2015, "yearTo": null }
+        ]
       },
       {
         "name": "PC35MR‑5",
-        "generations": []
+        "generations": [
+          { "name": "MR-5 series", "yearFrom": 2015, "yearTo": null }
+        ]
       },
       {
         "name": "PC45MR‑5",
-        "generations": []
+        "generations": [
+          { "name": "MR-5 series", "yearFrom": 2015, "yearTo": null }
+        ]
       },
       {
         "name": "PC55MR‑5",
-        "generations": []
+        "generations": [
+          { "name": "MR-5 series", "yearFrom": 2015, "yearTo": null }
+        ]
       },
       {
         "name": "PC78US‑5",
-        "generations": []
+        "generations": [
+          { "name": "US-5 series", "yearFrom": 2015, "yearTo": null }
+        ]
       }
     ]
   },
@@ -10743,27 +12222,40 @@
     "models": [
       {
         "name": "Profi Liner",
-        "generations": []
+        "generations": [
+          { "name": "Profi Liner (1st gen)", "yearFrom": 1997, "yearTo": 2012 },
+          { "name": "Profi Liner (2nd gen)", "yearFrom": 2012, "yearTo": null }
+        ]
       },
       {
         "name": "AX forage wagon",
-        "generations": []
+        "generations": [
+          { "name": "AX series", "yearFrom": 2010, "yearTo": null }
+        ]
       },
       {
         "name": "RX forage wagon",
-        "generations": []
+        "generations": [
+          { "name": "RX series", "yearFrom": 2005, "yearTo": null }
+        ]
       },
       {
         "name": "ZX forage wagon",
-        "generations": []
+        "generations": [
+          { "name": "ZX series", "yearFrom": 2000, "yearTo": null }
+        ]
       },
       {
         "name": "TX forage wagon",
-        "generations": []
+        "generations": [
+          { "name": "TX series", "yearFrom": 1995, "yearTo": null }
+        ]
       },
       {
         "name": "GX forage wagon",
-        "generations": []
+        "generations": [
+          { "name": "GX series", "yearFrom": 2015, "yearTo": null }
+        ]
       }
     ]
   },
@@ -10772,35 +12264,52 @@
     "models": [
       {
         "name": "Ypsilon",
-        "generations": [{ "name": "3rd gen", "yearFrom": 2003, "yearTo": null }]
+        "generations": [
+          { "name": "1st generation (840)", "yearFrom": 1995, "yearTo": 2003 },
+          { "name": "2nd generation (843)", "yearFrom": 2003, "yearTo": 2011 },
+          { "name": "3rd generation (846)", "yearFrom": 2011, "yearTo": null }
+        ]
       },
       {
         "name": "Delta",
         "generations": [
-          { "name": "I", "yearFrom": 1979, "yearTo": 1994 },
-          { "name": "II", "yearFrom": 1993, "yearTo": 1999 },
-          { "name": "III", "yearFrom": 2008, "yearTo": 2014 }
+          { "name": "1st generation (831)", "yearFrom": 1979, "yearTo": 1994 },
+          { "name": "2nd generation (836)", "yearFrom": 1993, "yearTo": 1999 },
+          { "name": "3rd generation (844)", "yearFrom": 2008, "yearTo": 2014 }
         ]
       },
       {
         "name": "Flavia",
-        "generations": []
+        "generations": [
+          { "name": "1st generation", "yearFrom": 1961, "yearTo": 1970 },
+          { "name": "2nd generation (Flavia 2000)", "yearFrom": 1971, "yearTo": 1985 },
+          { "name": "3rd generation (revival)", "yearFrom": 2012, "yearTo": 2014 }
+        ]
       },
       {
         "name": "Fulvia",
-        "generations": []
+        "generations": [
+          { "name": "Series 1", "yearFrom": 1963, "yearTo": 1969 },
+          { "name": "Series 2", "yearFrom": 1969, "yearTo": 1976 }
+        ]
       },
       {
         "name": "Beta",
-        "generations": []
+        "generations": [
+          { "name": "1st generation (828)", "yearFrom": 1972, "yearTo": 1984 }
+        ]
       },
       {
         "name": "Gamma",
-        "generations": []
+        "generations": [
+          { "name": "1st generation (830)", "yearFrom": 1976, "yearTo": 1984 }
+        ]
       },
       {
         "name": "2000",
-        "generations": []
+        "generations": [
+          { "name": "1st generation", "yearFrom": 1971, "yearTo": 1977 }
+        ]
       }
     ]
   },

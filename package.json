@@ -40,21 +40,25 @@
       "import": "./dist/esm/index.js",
       "require": "./dist/cjs/index.js",
       "types": "./dist/types/index.d.ts"
-    }
+    },
+    "./browser": "./dist/browser/auto-parts-db.min.js"
   },
+  "browser": "./dist/browser/auto-parts-db.min.js",
   "main": "./dist/cjs/index.js",
   "types": "./dist/types/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "npm run build:esm && npm run build:cjs && npm run build:types",
+    "build": "npm run build:esm && npm run build:cjs && npm run build:types && npm run build:browser",
     "build:esm": "tsc --project tsconfig.esm.json",
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "build:types": "tsc --project tsconfig.types.json",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build",
+    "build:browser": "esbuild src/index.ts --bundle --format=iife --global-name=AutoPartsDB --outfile=dist/browser/auto-parts-db.min.js --minify"
   },
   "devDependencies": {
+    "esbuild": "^0.27.3",
     "typescript": "^5.0.0"
   },
   "module": "./dist/esm/index.js"

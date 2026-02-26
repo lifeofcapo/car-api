@@ -1,12 +1,10 @@
-export { brands } from "./data/brands";
-export { parts } from "./data/parts";
-export type { Brand, Model, Generation } from "./data/brands";
-export type { Part } from "./data/parts";
-
 import { brands } from "./data/brands";
 import { parts } from "./data/parts";
 import type { Brand, Model, Generation } from "./data/brands";
 import type { Part } from "./data/parts";
+
+export { brands, parts };
+export type { Brand, Model, Generation, Part };
 
 // ─── BRANDS & MODELS ────────────────────────────────────────────────────────
 
@@ -91,7 +89,7 @@ export function searchParts(query: string): Part[] {
   );
 }
 
-/** Получить список уникальных slug всех запчастей */
+/** Get full list of unique slug all parts */
 export function getPartSlugs(): string[] {
   return (parts as unknown as Part[]).map((p) => p.slug);
 }
