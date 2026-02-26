@@ -31,13 +31,12 @@
     <meta name="theme-color" content="#111111">
     <meta name="msapplication-TileColor" content="#111111">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
-    </style>
     <link rel="stylesheet" href="web/styles.css">
 
         <script type="application/ld+json">
@@ -55,376 +54,783 @@
     }
     </script>
 </head>
+
 <body>
-    <header>
-        <nav class="container">
-            <div class="logo">
-                <span>🚗</span> Car API
+
+<div class="page">
+
+<aside class="sidebar" id="sidebar">
+  <div class="sidebar-logo">
+    <a href="#" class="pkg-name">⚙ auto-parts-db</a>
+    <span class="version">v1.9.1</span>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">Getting Started</div>
+    <a href="#overview" class="sidebar-link"><span class="dot"></span>Overview</a>
+    <a href="#installation" class="sidebar-link"><span class="dot"></span>Installation</a>
+    <a href="#quick-start" class="sidebar-link"><span class="dot"></span>Quick Start</a>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">Frameworks</div>
+    <a href="#nodejs" class="sidebar-link"><span class="dot"></span>Node.js / CommonJS</a>
+    <a href="#esm" class="sidebar-link"><span class="dot"></span>ESM / TypeScript</a>
+    <a href="#react" class="sidebar-link"><span class="dot"></span>React</a>
+    <a href="#vue" class="sidebar-link"><span class="dot"></span>Vue</a>
+    <a href="#angular" class="sidebar-link"><span class="dot"></span>Angular</a>
+    <a href="#browser" class="sidebar-link"><span class="dot"></span>Browser / CDN</a>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">API Reference</div>
+    <a href="#api-brands" class="sidebar-link"><span class="dot"></span>Brands & Models</a>
+    <a href="#api-parts" class="sidebar-link"><span class="dot"></span>Parts</a>
+    <a href="#api-types" class="sidebar-link"><span class="dot"></span>TypeScript Types</a>
+  </div>
+
+  <div class="sidebar-section">
+    <div class="sidebar-section-title">More</div>
+    <a href="#data-structure" class="sidebar-link"><span class="dot"></span>Data Structure</a>
+    <a href="#contributing" class="sidebar-link"><span class="dot"></span>Contributing</a>
+  </div>
+</aside>
+
+<div class="main">
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="hamburger" onclick="toggleSidebar()" aria-label="Menu">☰</button>
+      <span class="breadcrumb">auto-parts-db / <span>Documentation</span></span>
+    </div>
+    <div class="topbar-right">
+      <a href="https://www.npmjs.com/package/auto-parts-db" target="_blank" class="topbar-badge">
+<svg width="4" height="2" viewBox="0 0 18 7" fill="none" xmlns="http://www.w3.org/2000/svg" style="height: 18px; width: auto;">
+  <rect width="18" height="7" rx="1" fill="#CC3534"/>
+  <path d="M2 1H16V6H9V2H7V6H2V1Z" fill="white"/>
+  <rect x="10" y="2" width="1" height="3" fill="#CC3534"/>
+</svg>
+        npm
+      </a>
+        <a href="https://github.com/lifeofcapo/car-api" class="topbar-badge" target="_blank">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            Star on GitHub
+        </a>
+    </div>
+  </header>
+
+  <main class="content">
+
+    <section class="hero-section fade-in">
+      <span id="overview" class="section-anchor"></span>
+      <div class="hero-tag">Open Source · Free · MIT License</div>
+      <h1>
+        The automotive<br>
+        database for<br>
+        <span class="mono">JavaScript</span>
+      </h1>
+      <p class="hero-desc">
+        94+ brands, 2000+ models with generations, and 1200+ auto parts — 
+        all in a single zero-dependency npm package.
+      </p>
+
+      <div class="badges">
+        <img src="https://img.shields.io/npm/v/auto-parts-db?style=flat-square&color=00d9ff&labelColor=0d1117" alt="npm version">
+        <img src="https://img.shields.io/npm/dm/auto-parts-db?style=flat-square&color=2ea44f&labelColor=0d1117" alt="downloads">
+        <img src="https://img.shields.io/badge/TypeScript-ready-orange?style=flat-square&labelColor=0d1117" alt="typescript">
+        <img src="https://img.shields.io/badge/License-MIT-7d8590?style=flat-square&labelColor=0d1117" alt="license">
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-item">
+          <span class="stat-num" id="stat-brands">100+</span>
+          <span class="stat-label">Car Brands</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" id="stat-models">2000+</span>
+          <span class="stat-label">Models</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" id="stat-parts">1200+</span>
+          <span class="stat-label">Auto Parts</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-num" id="stat-response">—</span>
+          <span class="stat-label">Load Time</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section fade-in">
+      <span id="installation" class="section-anchor"></span>
+      <h2>Installation</h2>
+      <p class="section-desc">Install via your preferred package manager. No extra dependencies required.</p>
+
+      <div class="install-tabs">
+        <div class="tab-buttons">
+          <button class="tab-btn active" onclick="switchTab(this,'npm')">npm</button>
+          <button class="tab-btn" onclick="switchTab(this,'yarn')">yarn</button>
+          <button class="tab-btn" onclick="switchTab(this,'pnpm')">pnpm</button>
+          <button class="tab-btn" onclick="switchTab(this,'bun')">bun</button>
+        </div>
+        <div class="tab-content active attached-top" id="tab-npm">
+          <div class="code-block attached-top">
+            <div class="code-body">
+              <pre>npm install auto-parts-db</pre>
             </div>
-
-            <div class="hamburger" onclick="toggleMenu()">☰</div>
-
-            <div class="nav-links">
-                <a href="#quickstart">Quick Start</a>
-                <a href="#endpoints">Endpoints</a>
-                <a href="#examples">Examples</a>
-                <div class="github-actions">
-                    <div class="star-count">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                            <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Z"/>
-                        </svg>
-                        5
-                    </div>
-                    <a href="https://github.com/lifeofcapo/car-api" class="github-btn" target="_blank">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                        Star on GitHub
-                    </a>
-                </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-yarn">
+          <div class="code-block attached-top">
+            <div class="code-body">
+              <pre>yarn add auto-parts-db</pre>
             </div>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="container ">
-                <div class="badge">
-                    <span>✨</span> Free & Open Source
-                </div>
-                <h1>Car Brands & Parts API</h1>
-                <p>A comprehensive REST API for automotive data. Access thousands of car brands, models, generations, and compatible parts.</p>
-                <div class="cta-buttons">
-                    <a href="#quickstart" class="btn btn-primary">Get Started →</a>
-                    <a href="#examples" class="btn btn-secondary">View Examples</a>
-                </div>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-pnpm">
+          <div class="code-block attached-top">
+            <div class="code-body">
+              <pre>pnpm add auto-parts-db</pre>
             </div>
-        </section>
+          </div>
+        </div>
+        <div class="tab-content" id="tab-bun">
+          <div class="code-block attached-top">
+            <div class="code-body">
+              <pre>bun add auto-parts-db</pre>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <section id="endpoints" class="section fade-in">
-            <div class="container">
-                <div class="section-header">
-                    <h2>API Endpoints</h2>
-                    <p>Two powerful endpoints to fuel your automotive applications</p>
-                </div>
+      <div class="callout info">
+        <span class="callout-icon">ℹ️</span>
+        <p>The package ships three build targets: <code>dist/esm</code> for ESM, <code>dist/cjs</code> for CommonJS, and <code>dist/browser/auto-parts-db.min.js</code> as a browser-ready IIFE bundle. The correct one is resolved automatically.</p>
+      </div>
+    </section>
 
-                <div class="endpoints-grid">
-                    <div class="endpoint-card">
-                        <div class="endpoint-header">
-                            <span class="method-badge">GET</span>
-                            <h3>Car Brands</h3>
-                        </div>
-                        <div class="endpoint-url">https://lifeofcapo.github.io/car-api/car-brands.json</div>
-                        <p class="endpoint-description">
-                            Complete database of car brands with models and generations. Includes production years, generation codes (C1, C2, etc.), and model variants. <strong>Note:</strong> A <code>yearTo: null</code> value indicates the generation is currently in production (2025+).
-                        </p>
-                        <div class="response-example">
-                            <div class="response-label">
-                                <span>✓</span> Response Structure
-                            </div>
-                            <pre class="json-code">{
-  "brand": "Audi",
-  "models": [
-      {
-        "name": "A1",
-        "generations": [
-          { "name": "8X", "yearFrom": 2010, "yearTo": 2018 },
-          { "name": "GB", "yearFrom": 2018, "yearTo": null }
-        ]
-      },
+    <section class="doc-section fade-in">
+      <span id="quick-start" class="section-anchor"></span>
+      <h2>Quick Start</h2>
+      <p class="section-desc">Import the functions you need and start querying immediately.</p>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">TypeScript / ESM</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-body">
+<pre><span class="k">import</span> { <span class="f">getBrands</span>, <span class="f">getModelsByBrand</span>, <span class="f">searchParts</span> } <span class="k">from</span> <span class="s">'auto-parts-db'</span>;
+
+<span class="c">// Get all car brand names</span>
+<span class="k">const</span> <span class="p">brands</span> = <span class="f">getBrands</span>();
+console.<span class="f">log</span>(<span class="p">brands</span>); <span class="c">// ['Audi', 'BMW', 'Toyota', ...]</span>
+
+<span class="c">// Get all models for a brand</span>
+<span class="k">const</span> <span class="p">models</span> = <span class="f">getModelsByBrand</span>(<span class="s">'Audi'</span>);
+console.<span class="f">log</span>(<span class="p">models</span>[<span class="n">0</span>]);
+<span class="c">// { name: 'A4', generations: [{ name: 'B5', yearFrom: 1994, yearTo: 2001 }, ...] }</span>
+
+<span class="c">// Search parts by name or slug</span>
+<span class="k">const</span> <span class="p">results</span> = <span class="f">searchParts</span>(<span class="s">'absorber'</span>);
+console.<span class="f">log</span>(<span class="p">results</span>); <span class="c">// [{ slug: 'absorber-bampera', name: '...' }, ...]</span></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section fade-in">
+      <span id="nodejs" class="section-anchor"></span>
+      <h2>Node.js / CommonJS</h2>
+      <p class="section-desc">Works out of the box with <code>require()</code> in any Node.js project.</p>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">JavaScript</span>
+          <span class="code-filename">index.js</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-body">
+<pre><span class="k">const</span> { <span class="f">getBrands</span>, <span class="f">getModelsByBrand</span>, <span class="f">getParts</span> } = <span class="f">require</span>(<span class="s">'auto-parts-db'</span>);
+
+<span class="k">const</span> <span class="p">brands</span> = <span class="f">getBrands</span>();
+console.<span class="f">log</span>(<span class="s">`Loaded <span class="p">${brands.length}</span> brands`</span>);
+
+<span class="k">const</span> <span class="p">bmwModels</span> = <span class="f">getModelsByBrand</span>(<span class="s">'BMW'</span>);
+console.<span class="f">log</span>(<span class="p">bmwModels</span>);</pre>
+        </div>
+      </div>
+
+      <div class="callout tip">
+        <span class="callout-icon">✅</span>
+        <p>The <code>main</code> field in <code>package.json</code> points to <code>dist/cjs/index.js</code> — Node.js picks it up automatically with no extra config.</p>
+      </div>
+    </section>
+
+    <section class="doc-section fade-in">
+      <span id="esm" class="section-anchor"></span>
+      <h2>ESM / TypeScript</h2>
+      <p class="section-desc">Full TypeScript support with bundled type definitions. Tree-shakeable — import only what you use.</p>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">TypeScript</span>
+          <span class="code-filename">example.ts</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-body">
+<pre><span class="k">import</span> {
+  <span class="f">getBrands</span>,
+  <span class="f">getBrand</span>,
+  <span class="f">getModelsByBrand</span>,
+  <span class="f">getGenerations</span>,
+  <span class="f">getGenerationByYear</span>,
+} <span class="k">from</span> <span class="s">'auto-parts-db'</span>;
+<span class="k">import type</span> { <span class="t">Brand</span>, <span class="t">Model</span>, <span class="t">Generation</span> } <span class="k">from</span> <span class="s">'auto-parts-db'</span>;
+
+<span class="c">// TypeScript knows the exact return types</span>
+<span class="k">const</span> <span class="p">brand</span>: <span class="t">Brand</span> | <span class="t">null</span> = <span class="f">getBrand</span>(<span class="s">'Toyota'</span>);
+<span class="k">const</span> <span class="p">gen</span>: <span class="t">Generation</span> | <span class="t">null</span> = <span class="f">getGenerationByYear</span>(<span class="s">'BMW'</span>, <span class="s">'3 Series'</span>, <span class="n">2019</span>);
+
+console.<span class="f">log</span>(<span class="p">gen</span>); <span class="c">// { name: 'G20', yearFrom: 2018, yearTo: null }</span></pre>
+        </div>
+      </div>
+
+      <div class="callout info">
+        <span class="callout-icon">📘</span>
+        <p>Types are shipped in <code>dist/types/index.d.ts</code> and resolved automatically via the <code>types</code> field in <code>package.json</code>. No <code>@types</code> package needed.</p>
+      </div>
+    </section>
+
+    <section class="doc-section fade-in">
+      <span id="react" class="section-anchor"></span>
+      <h2>React</h2>
+      <p class="section-desc">Use with hooks for dynamic filtering — the data is synchronous so no async required.</p>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">TSX</span>
+          <span class="code-filename">BrandSelector.tsx</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-body">
+<pre><span class="k">import</span> { useState } <span class="k">from</span> <span class="s">'react'</span>;
+<span class="k">import</span> { <span class="f">getBrands</span>, <span class="f">getModelsByBrand</span>, <span class="f">searchParts</span> } <span class="k">from</span> <span class="s">'auto-parts-db'</span>;
+<span class="k">import type</span> { <span class="t">Model</span> } <span class="k">from</span> <span class="s">'auto-parts-db'</span>;
+
+<span class="k">export default function</span> <span class="f">BrandSelector</span>() {
+  <span class="k">const</span> [<span class="p">selected</span>, <span class="f">setSelected</span>] = <span class="f">useState</span>(<span class="s">''</span>);
+  <span class="k">const</span> [<span class="p">models</span>, <span class="f">setModels</span>] = <span class="f">useState</span>&lt;<span class="t">Model</span>[]&gt;([]);
+
+  <span class="k">const</span> <span class="f">handleBrand</span> = (<span class="p">brand</span>: <span class="t">string</span>) => {
+    <span class="f">setSelected</span>(<span class="p">brand</span>);
+    <span class="f">setModels</span>(<span class="f">getModelsByBrand</span>(<span class="p">brand</span>));
+  };
+
+  <span class="k">return</span> (
+    &lt;<span class="t">div</span>&gt;
+      &lt;<span class="t">select</span> <span class="p">onChange</span>={e =&gt; <span class="f">handleBrand</span>(e.target.value)}&gt;
+        &lt;<span class="t">option</span>&gt;Select brand&lt;/<span class="t">option</span>&gt;
+        {<span class="f">getBrands</span>().<span class="f">map</span>(b =&gt; (
+          &lt;<span class="t">option</span> <span class="p">key</span>={b} <span class="p">value</span>={b}&gt;{b}&lt;/<span class="t">option</span>&gt;
+        ))}
+      &lt;/<span class="t">select</span>&gt;
+      &lt;<span class="t">ul</span>&gt;
+        {<span class="p">models</span>.<span class="f">map</span>(m =&gt; &lt;<span class="t">li</span> <span class="p">key</span>={m.name}&gt;{m.name}&lt;/<span class="t">li</span>&gt;)}
+      &lt;/<span class="t">ul</span>&gt;
+    &lt;/<span class="t">div</span>&gt;
+  );
+}</pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section fade-in">
+      <span id="vue" class="section-anchor"></span>
+      <h2>Vue 3</h2>
+      <p class="section-desc">Works with the Composition API and <code>&lt;script setup&gt;</code>.</p>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">Vue</span>
+          <span class="code-filename">BrandPicker.vue</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-body">
+<pre>&lt;<span class="k">script setup</span> <span class="p">lang</span>=<span class="s">"ts"</span>&gt;
+<span class="k">import</span> { ref } <span class="k">from</span> <span class="s">'vue'</span>;
+<span class="k">import</span> { <span class="f">getBrands</span>, <span class="f">getModelsByBrand</span> } <span class="k">from</span> <span class="s">'auto-parts-db'</span>;
+<span class="k">import type</span> { <span class="t">Model</span> } <span class="k">from</span> <span class="s">'auto-parts-db'</span>;
+
+<span class="k">const</span> <span class="p">brands</span> = <span class="f">getBrands</span>();
+<span class="k">const</span> <span class="p">models</span> = <span class="f">ref</span>&lt;<span class="t">Model</span>[]&gt;([]);
+
+<span class="k">function</span> <span class="f">onBrandChange</span>(<span class="p">e</span>: <span class="t">Event</span>) {
+  <span class="k">const</span> <span class="p">val</span> = (<span class="p">e</span>.target <span class="k">as</span> <span class="t">HTMLSelectElement</span>).value;
+  <span class="p">models</span>.value = <span class="f">getModelsByBrand</span>(<span class="p">val</span>);
+}
+&lt;/<span class="k">script</span>&gt;
+
+&lt;<span class="k">template</span>&gt;
+  &lt;<span class="t">select</span> @<span class="p">change</span>=<span class="s">"onBrandChange"</span>&gt;
+    &lt;<span class="t">option</span> <span class="p">v-for</span>=<span class="s">"b in brands"</span> :key=<span class="s">"b"</span>&gt;{{ b }}&lt;/<span class="t">option</span>&gt;
+  &lt;/<span class="t">select</span>&gt;
+  &lt;<span class="t">ul</span>&gt;
+    &lt;<span class="t">li</span> <span class="p">v-for</span>=<span class="s">"m in models"</span> :key=<span class="s">"m.name"</span>&gt;{{ m.name }}&lt;/<span class="t">li</span>&gt;
+  &lt;/<span class="t">ul</span>&gt;
+&lt;/<span class="k">template</span>&gt;</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Angular -->
+    <section class="doc-section fade-in">
+      <span id="angular" class="section-anchor"></span>
+      <h2>Angular</h2>
+      <p class="section-desc">Import directly in a component or wrap in a service for dependency injection.</p>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">TypeScript</span>
+          <span class="code-filename">cars.service.ts</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-body">
+<pre><span class="k">import</span> { Injectable } <span class="k">from</span> <span class="s">'@angular/core'</span>;
+<span class="k">import</span> { <span class="f">getBrands</span>, <span class="f">getModelsByBrand</span>, <span class="f">searchParts</span> } <span class="k">from</span> <span class="s">'auto-parts-db'</span>;
+<span class="k">import type</span> { <span class="t">Model</span>, <span class="t">Part</span> } <span class="k">from</span> <span class="s">'auto-parts-db'</span>;
+
+@<span class="f">Injectable</span>({ providedIn: <span class="s">'root'</span> })
+<span class="k">export class</span> <span class="t">CarsService</span> {
+  <span class="f">getBrands</span>(): <span class="t">string</span>[] { <span class="k">return</span> <span class="f">getBrands</span>(); }
+  <span class="f">getModels</span>(<span class="p">brand</span>: <span class="t">string</span>): <span class="t">Model</span>[] { <span class="k">return</span> <span class="f">getModelsByBrand</span>(<span class="p">brand</span>); }
+  <span class="f">searchParts</span>(<span class="p">q</span>: <span class="t">string</span>): <span class="t">Part</span>[] { <span class="k">return</span> <span class="f">searchParts</span>(<span class="p">q</span>); }
+}</pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- Browser / CDN -->
+    <section class="doc-section fade-in">
+      <span id="browser" class="section-anchor"></span>
+      <h2>Browser / CDN</h2>
+      <p class="section-desc">No bundler needed. Drop a single <code>&lt;script&gt;</code> tag and access everything via the global <code>AutoPartsDB</code> object.</p>
+
+      <h3>Via jsDelivr (recommended)</h3>
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">HTML</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-body">
+<pre>&lt;<span class="k">script</span> <span class="p">src</span>=<span class="s">"https://cdn.jsdelivr.net/npm/auto-parts-db/dist/browser/auto-parts-db.min.js"</span>&gt;&lt;/<span class="k">script</span>&gt;
+&lt;<span class="k">script</span>&gt;
+  <span class="c">// All functions available on the AutoPartsDB global object</span>
+  <span class="k">const</span> <span class="p">brands</span> = AutoPartsDB.<span class="f">getBrands</span>();
+  console.<span class="f">log</span>(<span class="p">brands</span>); <span class="c">// ['Audi', 'BMW', ...]</span>
+
+  <span class="k">const</span> <span class="p">parts</span> = AutoPartsDB.<span class="f">searchParts</span>(<span class="s">'absorber'</span>);
+  console.<span class="f">log</span>(<span class="p">parts</span>);
+&lt;/<span class="k">script</span>&gt;</pre>
+        </div>
+      </div>
+
+      <h3>Full example page</h3>
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">HTML</span>
+          <span class="code-filename">index.html</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-body">
+<pre>&lt;!DOCTYPE html&gt;
+&lt;<span class="k">html</span>&gt;
+&lt;<span class="k">head</span>&gt;
+  &lt;<span class="k">script</span> <span class="p">src</span>=<span class="s">"https://cdn.jsdelivr.net/npm/auto-parts-db/dist/browser/auto-parts-db.min.js"</span>&gt;&lt;/<span class="k">script</span>&gt;
+&lt;/<span class="k">head</span>&gt;
+&lt;<span class="k">body</span>&gt;
+  &lt;<span class="k">select</span> <span class="p">id</span>=<span class="s">"brand"</span>&gt;&lt;/<span class="k">select</span>&gt;
+  &lt;<span class="k">ul</span> <span class="p">id</span>=<span class="s">"models"</span>&gt;&lt;/<span class="k">ul</span>&gt;
+
+  &lt;<span class="k">script</span>&gt;
+    <span class="k">const</span> { <span class="f">getBrands</span>, <span class="f">getModelsByBrand</span> } = AutoPartsDB;
+    <span class="k">const</span> <span class="p">sel</span> = document.<span class="f">getElementById</span>(<span class="s">'brand'</span>);
+
+    <span class="f">getBrands</span>().<span class="f">forEach</span>(<span class="p">b</span> =&gt; {
+      <span class="k">const</span> <span class="p">opt</span> = document.<span class="f">createElement</span>(<span class="s">'option'</span>);
+      <span class="p">opt</span>.value = <span class="p">opt</span>.textContent = <span class="p">b</span>;
+      <span class="p">sel</span>.<span class="f">append</span>(<span class="p">opt</span>);
+    });
+
+    <span class="p">sel</span>.<span class="f">addEventListener</span>(<span class="s">'change'</span>, () =&gt; {
+      <span class="k">const</span> <span class="p">list</span> = document.<span class="f">getElementById</span>(<span class="s">'models'</span>);
+      <span class="p">list</span>.innerHTML = <span class="f">getModelsByBrand</span>(<span class="p">sel</span>.value)
+        .<span class="f">map</span>(<span class="p">m</span> =&gt; <span class="s">`&lt;li&gt;<span class="p">${m.name}</span>&lt;/li&gt;`</span>)
+        .<span class="f">join</span>(<span class="s">''</span>);
+    });
+  &lt;/<span class="k">script</span>&gt;
+&lt;/<span class="k">body</span>&gt;
+&lt;/<span class="k">html</span>&gt;</pre>
+        </div>
+      </div>
+
+      <div class="callout warn">
+        <span class="callout-icon">⚠️</span>
+        <p>The browser bundle is <strong>~533 KB</strong> because it includes all data inline. For production apps with a bundler, use the npm package instead — tree shaking will reduce the size significantly.</p>
+      </div>
+
+      <h3>Available globals</h3>
+      <p>After the script loads, all functions are available via <code>AutoPartsDB.*</code>:</p>
+      <div class="code-block">
+        <div class="code-body">
+<pre>AutoPartsDB.<span class="f">getBrands</span>()
+AutoPartsDB.<span class="f">getBrand</span>(<span class="p">brandName</span>)
+AutoPartsDB.<span class="f">getModelsByBrand</span>(<span class="p">brandName</span>)
+AutoPartsDB.<span class="f">getGenerations</span>(<span class="p">brandName</span>, <span class="p">modelName</span>)
+AutoPartsDB.<span class="f">getGenerationByYear</span>(<span class="p">brandName</span>, <span class="p">modelName</span>, <span class="p">year</span>)
+AutoPartsDB.<span class="f">searchModels</span>(<span class="p">query</span>)
+AutoPartsDB.<span class="f">getParts</span>()
+AutoPartsDB.<span class="f">getPartBySlug</span>(<span class="p">slug</span>)
+AutoPartsDB.<span class="f">searchParts</span>(<span class="p">query</span>)
+AutoPartsDB.<span class="f">getPartSlugs</span>()
+<span class="c">// Raw data arrays (tree-shaking doesn't apply in browser bundle)</span>
+AutoPartsDB.<span class="f">brands</span>
+AutoPartsDB.<span class="f">parts</span></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section fade-in">
+      <span id="api-brands" class="section-anchor"></span>
+      <h2>API — Brands &amp; Models</h2>
+      <p class="section-desc">All functions are synchronous and return plain objects or arrays.</p>
+
+      <table class="api-table">
+        <thead>
+          <tr>
+            <th>Function</th>
+            <th>Parameters</th>
+            <th>Returns</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>getBrands()</td>
+            <td>—</td>
+            <td><span class="ret-pill">string[]</span></td>
+            <td>List of all brand names</td>
+          </tr>
+          <tr>
+            <td>getBrand()</td>
+            <td><span class="type-pill">brandName: string</span></td>
+            <td><span class="ret-pill">Brand | null</span></td>
+            <td>Full brand object with all models</td>
+          </tr>
+          <tr>
+            <td>getModelsByBrand()</td>
+            <td><span class="type-pill">brandName: string</span></td>
+            <td><span class="ret-pill">Model[]</span></td>
+            <td>All models for a brand. Case-insensitive.</td>
+          </tr>
+          <tr>
+            <td>getGenerations()</td>
+            <td><span class="type-pill">brandName, modelName</span></td>
+            <td><span class="ret-pill">Generation[]</span></td>
+            <td>All generations of a specific model</td>
+          </tr>
+          <tr>
+            <td>getGenerationByYear()</td>
+            <td><span class="type-pill">brand, model, year</span></td>
+            <td><span class="ret-pill">Generation | null</span></td>
+            <td>Generation active in a given year</td>
+          </tr>
+          <tr>
+            <td>searchModels()</td>
+            <td><span class="type-pill">query: string</span></td>
+            <td><span class="ret-pill">{ brand, model }[]</span></td>
+            <td>Search models across all brands by partial name</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Usage examples</h3>
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">TypeScript</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-body">
+<pre><span class="k">import</span> { <span class="f">getGenerationByYear</span>, <span class="f">searchModels</span> } <span class="k">from</span> <span class="s">'auto-parts-db'</span>;
+
+<span class="c">// Find which generation a 2019 BMW 3 Series is</span>
+<span class="k">const</span> <span class="p">gen</span> = <span class="f">getGenerationByYear</span>(<span class="s">'BMW'</span>, <span class="s">'3 Series'</span>, <span class="n">2019</span>);
+<span class="c">// → { name: 'G20', yearFrom: 2018, yearTo: null }</span>
+
+<span class="c">// Search models containing "golf" across all brands</span>
+<span class="k">const</span> <span class="p">hits</span> = <span class="f">searchModels</span>(<span class="s">'golf'</span>);
+<span class="c">// → [{ brand: 'Volkswagen', model: { name: 'Golf', generations: [...] } }]</span></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section fade-in">
+      <span id="api-parts" class="section-anchor"></span>
+      <h2>API — Parts</h2>
+      <p class="section-desc">1200+ auto parts with bilingual slugs and names. Search supports Russian and English.</p>
+
+      <table class="api-table">
+        <thead>
+          <tr>
+            <th>Function</th>
+            <th>Parameters</th>
+            <th>Returns</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>getParts()</td>
+            <td>—</td>
+            <td><span class="ret-pill">Part[]</span></td>
+            <td>Full list of all auto parts</td>
+          </tr>
+          <tr>
+            <td>getPartBySlug()</td>
+            <td><span class="type-pill">slug: string</span></td>
+            <td><span class="ret-pill">Part | null</span></td>
+            <td>Find a single part by its slug</td>
+          </tr>
+          <tr>
+            <td>searchParts()</td>
+            <td><span class="type-pill">query: string</span></td>
+            <td><span class="ret-pill">Part[]</span></td>
+            <td>Search by name or slug. Case-insensitive.</td>
+          </tr>
+          <tr>
+            <td>getPartSlugs()</td>
+            <td>—</td>
+            <td><span class="ret-pill">string[]</span></td>
+            <td>All part slugs (useful for routing/validation)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">TypeScript</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-body">
+<pre><span class="k">import</span> { <span class="f">searchParts</span>, <span class="f">getPartBySlug</span> } <span class="k">from</span> <span class="s">'auto-parts-db'</span>;
+
+<span class="c">// Search in English</span>
+<span class="f">searchParts</span>(<span class="s">'absorber'</span>);
+<span class="c">// → [{ slug: 'absorber-bampera', name: 'Абсорбер (наполнитель бампера)' }, ...]</span>
+
+<span class="c">// Search in Russian</span>
+<span class="f">searchParts</span>(<span class="s">'тормоз'</span>);
+<span class="c">// → all brake-related parts</span>
+
+<span class="c">// Lookup by slug</span>
+<span class="f">getPartBySlug</span>(<span class="s">'akkumuljator'</span>);
+<span class="c">// → { slug: 'akkumuljator', name: 'Аккумулятор (модуль высоковольтного накопителя батарея)' }</span></pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section fade-in">
+      <span id="api-types" class="section-anchor"></span>
+      <h2>TypeScript Types</h2>
+      <p class="section-desc">All types are exported from the package root.</p>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">TypeScript</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-body">
+<pre><span class="k">import type</span> { <span class="t">Brand</span>, <span class="t">Model</span>, <span class="t">Generation</span>, <span class="t">Part</span> } <span class="k">from</span> <span class="s">'auto-parts-db'</span>;
+
+<span class="k">type</span> <span class="t">Generation</span> = {
+  name: <span class="t">string</span>;
+  yearFrom: <span class="t">number</span>;
+  yearTo: <span class="t">number</span> | <span class="t">null</span>; <span class="c">// null = still in production</span>
+};
+
+<span class="k">type</span> <span class="t">Model</span> = {
+  name: <span class="t">string</span>;
+  generations: <span class="t">Generation</span>[];
+};
+
+<span class="k">type</span> <span class="t">Brand</span> = {
+  brand: <span class="t">string</span>;
+  models: <span class="t">Model</span>[];
+};
+
+<span class="k">type</span> <span class="t">Part</span> = {
+  slug: <span class="t">string</span>;
+  name: <span class="t">string</span>;
+};</pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="doc-section fade-in">
+      <span id="data-structure" class="section-anchor"></span>
+      <h2>Data Structure</h2>
+      <p class="section-desc">Example of what a brand object looks like in raw form.</p>
+
+      <div class="code-block">
+        <div class="code-header">
+          <span class="code-lang">JSON</span>
+          <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+        </div>
+        <div class="code-body">
+<pre>{
+  <span class="s">"brand"</span>: <span class="s">"BMW"</span>,
+  <span class="s">"models"</span>: [
+    {
+      <span class="s">"name"</span>: <span class="s">"3 Series"</span>,
+      <span class="s">"generations"</span>: [
+        { <span class="s">"name"</span>: <span class="s">"E21"</span>, <span class="s">"yearFrom"</span>: <span class="n">1975</span>, <span class="s">"yearTo"</span>: <span class="n">1983</span> },
+        { <span class="s">"name"</span>: <span class="s">"E30"</span>, <span class="s">"yearFrom"</span>: <span class="n">1982</span>, <span class="s">"yearTo"</span>: <span class="n">1994</span> },
+        { <span class="s">"name"</span>: <span class="s">"E36"</span>, <span class="s">"yearFrom"</span>: <span class="n">1990</span>, <span class="s">"yearTo"</span>: <span class="n">2000</span> },
+        { <span class="s">"name"</span>: <span class="s">"E46"</span>, <span class="s">"yearFrom"</span>: <span class="n">1997</span>, <span class="s">"yearTo"</span>: <span class="n">2006</span> },
+        { <span class="s">"name"</span>: <span class="s">"E90"</span>, <span class="s">"yearFrom"</span>: <span class="n">2004</span>, <span class="s">"yearTo"</span>: <span class="n">2013</span> },
+        { <span class="s">"name"</span>: <span class="s">"F30"</span>, <span class="s">"yearFrom"</span>: <span class="n">2011</span>, <span class="s">"yearTo"</span>: <span class="n">2019</span> },
+        { <span class="s">"name"</span>: <span class="s">"G20"</span>, <span class="s">"yearFrom"</span>: <span class="n">2018</span>, <span class="s">"yearTo"</span>: <span class="k">null</span> }
+      ]
+    }
   ]
 }</pre>
-                        </div>
-                    </div>
+        </div>
+      </div>
 
-                    <div class="endpoint-card fade-in">
-                        <div class="endpoint-header">
-                            <span class="method-badge">GET</span>
-                            <h3>Car Parts</h3>
-                        </div>
-                        <div class="endpoint-url">https://lifeofcapo.github.io/car-api/car-parts.json</div>
-                        <p class="endpoint-description">
-                            Extensive catalog of automotive parts with slugs and names. Perfect for building parts search, inventory management, or e-commerce applications.
-                        </p>
-                        <div class="response-example">
-                            <div class="response-label">
-                                <span>✓</span> Response Structure
-                            </div>
-                            <pre class="json-code">{
-  "slug": "absorber-bampera",
-  "name": "Абсорбер (наполнитель бампера)"
-}</pre>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="callout tip">
+        <span class="callout-icon">💡</span>
+        <p>A <code>yearTo</code> value of <code>null</code> means the model/generation is still in production as of the latest data update.</p>
+      </div>
+    </section>
 
-        <section class="section fade-in" id="stats">
-            <div class="container">
-                <div class="section-header">
-                    <h2>API Statistics</h2>
-                    <p>Live data loaded from the API</p>
-                </div>
+<section class="doc-section fade-in">
+  <span id="contributing" class="section-anchor"></span>
+  <h2>Contributing</h2>
+  <p class="section-desc">The database is maintained as plain TypeScript arrays — contributions are welcome and straightforward.</p>
 
-                <div class="features-grid">
-                    <div class="feature-card"><h3 id="stat-brands">0 Brands</h3></div>
-                    <div class="feature-card"><h3 id="stat-models">0 Models</h3></div>
-                    <div class="feature-card"><h3 id="stat-parts">0 Parts</h3></div>
-                    <div class="feature-card"><h3 id="stat-response">0 ms Response</h3></div>
-                </div>
-            </div>
-        </section>
+  <div class="code-block">
+    <div class="code-header">
+      <span class="code-lang">bash</span>
+      <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    </div>
+    <div class="code-body">
+<pre><span class="c"># 1. Fork the repository</span>
+<span class="c">#    Click "Fork" button on GitHub: https://github.com/lifeofcapo/car-list</span>
 
-        <section class="section fade-in" id="use-cases">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Use Cases</h2>
-                    <p>Real applications powered by this API</p>
-                </div>
+<span class="c"># 2. Clone your fork locally</span>
+git clone https://github.com/lifeofcapo/car-list.git
+cd car-list
 
-                <div class="features-grid">
-                    <div class="feature-card"><h3>Car Dealership Inventory</h3><p>Sync brands, models, and generations to manage stock.</p></div>
-                    <div class="feature-card"><h3>Auto Parts E-Commerce</h3><p>Map car generations to compatible parts.</p></div>
-                    <div class="feature-card"><h3>Vehicle Comparison Tools</h3><p>Use years & generations for detailed car comparisons.</p></div>
-                    <div class="feature-card"><h3>Maintenance Trackers</h3><p>Show compatible parts and model-specific data.</p></div>
-                </div>
-            </div>
-        </section>
+<span class="c"># 3. Add original repo as upstream (for sync)</span>
+git remote add upstream https://github.com/lifeofcapo/car-list.git
 
-        <section id="quickstart" class="section fade-in">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Quick Start</h2>
-                    <p>Get up and running in seconds</p>
-                </div>
+<span class="c"># 4. Create a new branch for your changes</span>
+git checkout -b add-new-brand
 
-                <div class="code-block">
-                    <div class="code-header">
-                        <span class="code-lang">JavaScript</span>
-                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                    </div>
-                    <div class="code-content">
-<pre><code class="language-javascript">// Fetch all car brands
-fetch('https://lifeofcapo.github.io/car-api/car-brands.json')
-  .then(response => response.json())
-  .then(data => {
-    console.log('Total brands:', data.length);
-    
-    // Find a specific brand
-    const audi = data.find(brand => brand.brand === 'Audi');
-    console.log('Audi models:', audi.models);
-  })
-  .catch(error => console.error('Error:', error));</code></pre>
-                    </div>
-                </div>
+<span class="c"># 5. Install dependencies</span>
+npm install
 
-                <div class="code-block">
-                    <div class="code-header">
-                        <span class="code-lang">Python</span>
-                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                    </div>
-                    <div class="code-content">
-<pre><code class="language-javascript">import requests
+<span class="c"># 6. Make your changes</span>
 
-# Fetch car parts
-response = requests.get('https://lifeofcapo.github.io/car-api/car-parts.json')
-parts = response.json()
+<span class="c"># 7. Build to verify everything works</span>
+npm run build
 
-# Search for specific parts
-absorbers = [p for p in parts if 'absorber' in p['slug']]
-print(f'Found {len(absorbers)} absorber parts')</code></pre>
-                    </div>
-                </div>
-            </div>
-        </section>
+<span class="c"># 8. Commit and push to your fork</span>
+git add .
+git commit -m "feat: add new car brand X"
+git push origin add-new-brand
 
-        <section id="examples" class="section fade-in">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Advanced Examples</h2>
-                    <p>Real-world use cases and patterns</p>
-                </div>
+<span class="c"># 9. Create Pull Request on GitHub</span>
+<span class="c">#    Go to your fork → "Contribute" → "Open Pull Request"</span></pre>
+    </div>
+  </div>
 
-                <div class="code-block">
-                    <div class="code-header">
-                        <span class="code-lang">JavaScript - Search by Year</span>
-                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                    </div>
-                    <div class="code-content">
-<pre><code class="language-javascript">async function findCarsByYear(year) {
-  const response = await fetch('https://lifeofcapo.github.io/car-api/car-brands.json');
-  const brands = await response.json();
-  
-  const results = [];
-  
-  brands.forEach(brand => {
-    brand.models.forEach(model => {
-      model.generations.forEach(gen => {
-        const endYear = gen.yearTo || new Date().getFullYear();
-        if (year >= gen.yearFrom && year <= endYear) {
-          results.push({
-            brand: brand.brand,
-            model: model.name,
-            generation: gen.name,
-            years: `${gen.yearFrom}-${gen.yearTo || 'present'}`
-          });
-        }
-      });
-    });
-  });
-  
-  return results;
+  <div class="callout tip">
+    <span class="callout-icon">💡</span>
+    <p>All types are inferred automatically — no schema changes needed. Just add your data to the arrays and the TypeScript types will update themselves.</p>
+  </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>auto-parts-db — MIT License</span>
+    <span>
+      <a href="https://github.com/lifeofcapo/car-api" target="_blank">GitHub</a> ·
+      <a href="https://www.npmjs.com/package/auto-parts-db" target="_blank">npm</a>
+    </span>
+  </footer>
+
+</div>
+</div>
+
+<script>
+
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
 }
 
-// Usage
-findCarsByYear(2020).then(cars => {
-  console.log('Cars from 2020:', cars);
-});</code></pre>
-                    </div>
-                </div>
+function switchTab(btn, name) {
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('tab-' + name).classList.add('active');
+}
 
-                <div class="code-block">
-                    <div class="code-header">
-                        <span class="code-lang">React Component</span>
-                        <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-                    </div>
-                    <div class="code-content">
-<pre><code class="language-javascript">import { useState, useEffect } from 'react';
+function copyCode(btn) {
+  const pre = btn.closest('.code-block').querySelector('pre');
+  navigator.clipboard.writeText(pre.innerText).then(() => {
+    btn.textContent = 'Copied!';
+    btn.classList.add('copied');
+    setTimeout(() => { btn.textContent = 'Copy'; btn.classList.remove('copied'); }, 2000);
+  });
+}
 
-function CarBrandSelector() {
-  const [brands, setBrands] = useState([]);
-  const [selectedBrand, setSelectedBrand] = useState(null);
-  const [loading, setLoading] = useState(true);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+}, { threshold: 0.07 });
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-  useEffect(() =&gt; {
-    fetch('https://lifeofcapo.github.io/car-api/car-brands.json')
-      .then(res =&gt; res.json())
-      .then(data =&gt; {
-        setBrands(data);
-        setLoading(false);
+const sections = document.querySelectorAll('.section-anchor');
+const links = document.querySelectorAll('.sidebar-link');
+const io = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      const id = e.target.id;
+      links.forEach(l => {
+        l.classList.toggle('active', l.getAttribute('href') === '#' + id);
       });
-  }, []);
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px' });
+sections.forEach(s => io.observe(s));
 
-  if (loading) return &lt;div&gt;Loading...&lt;/div&gt;;
-
-  return (
-    &lt;div&gt;
-      &lt;select onChange={e =&gt; setSelectedBrand(e.target.value)}&gt;
-        &lt;option&gt;Select a brand&lt;/option&gt;
-        {brands.map(brand =&gt; (
-          &lt;option key={brand.brand} value={brand.brand}&gt;
-            {brand.brand}
-          &lt;/option&gt;
-        ))}
-      &lt;/select&gt;
-      
-      {selectedBrand &amp;&amp; (
-        &lt;div&gt;
-          &lt;h3&gt;Models for {selectedBrand}&lt;/h3&gt;
-          {brands
-            .find(b =&gt; b.brand === selectedBrand)
-            ?.models.map(model =&gt; (
-              &lt;div key={model.name}&gt;{model.name}&lt;/div&gt;
-            ))}
-        &lt;/div&gt;
-      )}
-    &lt;/div&gt;
-  );
-}</code></pre>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Features</h2>
-                    <p>Everything you need in a modern API</p>
-                </div>
-
-                <div class="features-grid">
-                    <div class="feature-card fade-in">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
-                            </svg>
-                        </div>
-                        <h3>Lightning Fast</h3>
-                        <p>Hosted on GitHub Pages CDN for instant global access with minimal latency</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="10"/>
-                                <line x1="2" y1="12" x2="22" y2="12"/>
-                                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
-                            </svg>
-                        </div>
-                        <h3>CORS Enabled</h3>
-                        <p>Call from any domain without restrictions. Perfect for frontend applications</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <line x1="12" y1="1" x2="12" y2="23"/>
-                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-                            </svg>
-                        </div>
-                        <h3>100% Free</h3>
-                        <p>No API keys, no rate limits, no hidden costs. Just pure data access</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="16 18 22 12 16 6"/>
-                                <polyline points="8 6 2 12 8 18"/>
-                            </svg>
-                        </div>
-                        <h3>JSON Format</h3>
-                        <p>Clean, structured data that works with any programming language</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
-                            </svg>
-                        </div>
-                        <h3>Always Available</h3>
-                        <p>99.9% uptime guaranteed by GitHub's infrastructure</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/>
-                                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/>
-                            </svg>
-                        </div>
-                        <h3>Rich Data</h3>
-                        <p>Comprehensive information including years, generations, and compatibility</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="try">
-        <div class="container">
-            <div class="section-header"><h2>Try It Now</h2></div>
-
-            <input id="demo-input" placeholder="Search brand... (e.g. Audi)" 
-                style="padding:12px;width:100%;max-width:400px;border-radius:8px;border:1px solid var(--border);background:var(--bg-secondary);color:white;">
-            
-            <pre class="json-code" id="demo-output" style="margin-top:20px;">{}</pre>
-        </div>
-        </section>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>Built with ❤️ for the automotive community</p>
-        </div>
-    </footer>
-<script src="web/javascript.js"></script>
+async function loadStats() {
+  try {
+    const start = performance.now();
+    const [brands, parts] = await Promise.all([
+      fetch('https://lifeofcapo.github.io/car-api/car-brands.json').then(r => r.json()),
+      fetch('https://lifeofcapo.github.io/car-api/car-parts.json').then(r => r.json())
+    ]);
+    const ms = Math.round(performance.now() - start);
+    document.getElementById('stat-brands').textContent = brands.length;
+    document.getElementById('stat-models').textContent = brands.reduce((a, b) => a + b.models.length, 0);
+    document.getElementById('stat-parts').textContent = parts.length;
+    document.getElementById('stat-response').textContent = ms + 'ms';
+  } catch(e) {}
+}
+loadStats();
+</script>
 </body>
 </html>
