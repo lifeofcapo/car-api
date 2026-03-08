@@ -27,9 +27,9 @@ and 1200+ auto parts. Perfect for dealerships, e-commerce, and automotive apps.
 
 ```bash
 npm install auto-parts-db
-# or
+
 yarn add auto-parts-db
-# or
+
 pnpm add auto-parts-db
 ```
 ---
@@ -38,25 +38,20 @@ pnpm add auto-parts-db
 ```js
 import { getBrands, getModelsByBrand, searchParts } from 'auto-parts-db';
 
-// Get all car brands
 const brands = getBrands();
-console.log(brands); // ['Audi', 'BMW', 'Toyota', ...]
+console.log(brands);
 
-// Get models for a specific brand
 const audiModels = getModelsByBrand('Audi');
 console.log(audiModels[0]); 
-// { name: 'A4', generations: [{ name: 'B5', yearFrom: 1994, yearTo: 2001 }, ...] }
 
-// Search for auto parts
-const brakeParts = searchParts('тормоз');
-console.log(brakeParts); // All brake-related parts
+const brakeParts = searchParts('brake');
+console.log(brakeParts);
 ```
 
 ## Auto parts store integration
 ```js
 import { searchParts } from 'auto-parts-db';
 
-// User searches for "absorber"
 const parts = searchParts('absorber');
 // Returns all parts containing 'absorber' in name or slug
 ```
@@ -66,7 +61,7 @@ const parts = searchParts('absorber');
 
     const brands = AutoPartsDB.getBrands();
     const parts = AutoPartsDB.searchParts('absorber');
-    console.log(brands); // ['Audi', 'BMW', 'Toyota', ...]
+    console.log(brands); 
 
 ```
 
