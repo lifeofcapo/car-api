@@ -11,14 +11,14 @@
 **Save hundreds of euros on commercial APIs!** 
 
 The most comprehensive **automotive database** for JavaScript/TypeScript. 
-Includes 100+ car brands, 2000+ models with generations (1968-present), 
-and 1200+ auto parts. Perfect for dealerships, e-commerce, and automotive apps.
+Includes 142 car brands, 2379 models with generations (1968-present), 
+and 1530 auto parts. Perfect for dealerships, e-commerce, and automotive apps.
 
 ## ✨ Features
 
-- 🚙 **100+ Car Brands** - Audi, BMW, Toyota, Ford, Tesla, and more
+- 🚙 **142 Car Brands** - Audi, BMW, Toyota, Ford, Tesla, and more
 - 📅 **Generations with years** - Exact production years (1968-present)
-- 🔧 **1200+ Auto Parts** - Comprehensive parts catalog
+- 🔧 **1530 Auto Parts** - Comprehensive parts catalog
 - 📦 **Lightweight & Tree-shakeable** - Use only what you need
 - 🌐 **Works everywhere** - Node.js, browsers, React, Vue, Angular
 - 📘 **TypeScript ready** - Full type definitions included
